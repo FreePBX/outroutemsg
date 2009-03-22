@@ -1,0 +1,20 @@
+<module>
+	<rawname>outroutemsg</rawname>
+	<name>Route Congestion Messages</name>
+	<version>2.6.0</version>
+	<type>tool</type>
+	<category>System Administration</category>
+	<description>Configures message or congestion tones played when all trunks are busy in a route. Allows different messages for Emergency Routes and Intra-Company Routes
+	</description>
+	<menuitems>
+		<outroutemsg>Route Congestion Messages</outroutemsg>
+	</menuitems>
+	<changelog>
+		*2.6.0* Initial Version
+	</changelog>
+	<depends>
+		<module>recordings ge 3.3.8</module>
+	</depends>
+	<location>release/2.6/outroutemsg-2.5.1.3.tgz</location>
+	<md5sum>5410551c9d126f3028ac43d5da46ecc9</md5sum>
+</module>
