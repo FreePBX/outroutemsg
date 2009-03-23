@@ -40,6 +40,9 @@ if($action){
 //
 if ($action != 'submit') {
 	$outroutemsg_settings = outroutemsg_get();
+	$default_msg_id      = $outroutemsg_settings['default_msg_id'];
+	$intracompany_msg_id = $outroutemsg_settings['intracompany_msg_id'];
+	$emergency_msg_id    = $outroutemsg_settings['emergency_msg_id'];
 }
 
 ?>
