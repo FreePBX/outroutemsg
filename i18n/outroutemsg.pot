@@ -1,0 +1,84 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for outroutemsg
+# Copyright (C) 2009 Bandwith.com
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-03-23 19:28+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: functions.inc.php:143 page.outroutemsg.php:49
+msgid "Route Congestion Messages"
+msgstr ""
+
+#: page.outroutemsg.php:54
+msgid "Congested Route Options"
+msgstr ""
+
+#: page.outroutemsg.php:56
+msgid "Standard Routes"
+msgstr ""
+
+#: page.outroutemsg.php:58 page.outroutemsg.php:76 page.outroutemsg.php:94
+msgid "Message or Tone"
+msgstr ""
+
+#: page.outroutemsg.php:58
+msgid "Message or tone to be played if no trunks are available."
+msgstr ""
+
+#: page.outroutemsg.php:62 page.outroutemsg.php:80 page.outroutemsg.php:98
+msgid "Default Message"
+msgstr ""
+
+#: page.outroutemsg.php:63 page.outroutemsg.php:81 page.outroutemsg.php:99
+msgid "Congestion Tones"
+msgstr ""
+
+#: page.outroutemsg.php:74
+msgid "Intra-Company Routes"
+msgstr ""
+
+#: page.outroutemsg.php:76
+msgid ""
+"Message or tone to be played if no trunks are available. Used on routes "
+"marked as intra-company only."
+msgstr ""
+
+#: page.outroutemsg.php:92
+msgid "Emergency Routes"
+msgstr ""
+
+#: page.outroutemsg.php:94
+msgid ""
+"Message or tone to be played if no trunks are available. Used on all "
+"emergency routes. Consider a message instructing callers to find an "
+"alternative means of calling emergency services such as a cell phone or "
+"alarm system panel."
+msgstr ""
+
+#: page.outroutemsg.php:110
+msgid "Submit Changes"
+msgstr ""
