@@ -55,7 +55,7 @@ if ($action != 'submit') {
 
 <tr><td colspan="2"><br><h5><?php echo _("Standard Routes")?><hr></h5></td></tr>
 <tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if no trunks are available")?></span></a></td>
+	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if no trunks are available.")?></span></a></td>
 	<td align=right>
 		<select name="default_msg_id" id="default_msg_id" tabindex="<?php echo ++$tabindex;?>">
 		<?php
@@ -73,7 +73,7 @@ if ($action != 'submit') {
 
 <tr><td colspan="2"><br><h5><?php echo _("Intra-Company Routes")?><hr></h5></td></tr>
 <tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if no trunks are available")?></span></a></td>
+	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if no trunks are available. Used on routes marked as intra-company only.")?></span></a></td>
 	<td align=right>
 		<select name="intracompany_msg_id" id="intracompany_msg_id" tabindex="<?php echo ++$tabindex;?>">
 		<?php
@@ -91,7 +91,7 @@ if ($action != 'submit') {
 
 <tr><td colspan="2"><br><h5><?php echo _("Emergency Routes")?><hr></h5></td></tr>
 <tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if no trunks are available")?></span></a></td>
+	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if no trunks are available. Used on all emergency routes. Consider a message instructing callers to find an alternative means of calling emergency services such as a cell phone or alarm system panel.")?></span></a></td>
 	<td align=right>
 		<select name="emergency_msg_id" id="emergency_msg_id" tabindex="<?php echo ++$tabindex;?>">
 		<?php
