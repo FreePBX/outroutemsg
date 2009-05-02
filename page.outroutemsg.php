@@ -1,5 +1,5 @@
 <?php /* $Id: page.outroutemsg.php  $ */
-//Copyright (C) 2009 Bandwidth.com
+//Copyright (C) 2009 Philippe Lindheimer 
 //
 //This program is free software; you can redistribute it and/or
 //modify it under the terms of the GNU General Public License

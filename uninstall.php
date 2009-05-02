@@ -1,5 +1,5 @@
 <?php /* $Id: uninstall.php  $ */
-//Copyright (C) 2009 Bandwidth.com
+//Copyright (C) 2009 Philippe Lindheimer
 //
 //This program is free software; you can redistribute it and/or
 //modify it under the terms of the GNU General Public License
@@ -12,8 +12,6 @@
 //GNU General Public License for more details.
 
 
-echo "dropping table outroutemsg..";
 sql("DROP TABLE IF EXISTS `outroutemsg`");
-echo "done<br>\n";
 
 ?>

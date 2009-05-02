@@ -1,5 +1,5 @@
 <?php
-//Copyright (C) 2009 Bandwidth.com
+//Copyright (C) 2009 Philippe Lindheimer
 //
 //This program is free software; you can redistribute it and/or
 //modify it under the terms of the GNU General Public License
@@ -10,18 +10,6 @@
 //but WITHOUT ANY WARRANTY; without even the implied warranty of
 //MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //GNU General Public License for more details.
-
-if (! function_exists("out")) {
-	function out($text) {
-		echo $text."<br />";
-	}
-}
-
-if (! function_exists("outn")) {
-	function outn($text) {
-		echo $text;
-	}
-}
 
 global $db;
 global $amp_conf;
@@ -36,7 +24,7 @@ CREATE TABLE IF NOT EXISTS `outroutemsg`
 ";
 $check = $db->query($sql);
 if(DB::IsError($check)) {
-	die_freepbx("Can not create outroutemsg table");
+	die_freepbx(_("Can not create outroutemsg table"));
 }
 
 ?>
