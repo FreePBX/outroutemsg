@@ -15,6 +15,7 @@ define (DEFAULT_MSG, -1);
 define (CONGESTION_TONE, -2);
 
 $dispnum = 'outroutemsg'; //used for switch on config.php
+$tabindex = 0;
 
 $action  = isset($_REQUEST['action']) ? $_REQUEST['action'] : '';
 $type  = isset($_REQUEST['type']) ? $_REQUEST['type'] : 'tool';
