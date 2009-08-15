@@ -1,5 +1,6 @@
 <?php /* $Id: uninstall.php  $ */
-//Copyright (C) 2009 Philippe Lindheimer
+//Copyright (C) 2009 Philippe Lindheimer 
+//Copyright (C) 2009 Bandwidth.com
 //
 //This program is free software; you can redistribute it and/or
 //modify it under the terms of the GNU General Public License
