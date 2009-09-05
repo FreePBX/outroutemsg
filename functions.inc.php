@@ -12,8 +12,8 @@
 //MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //GNU General Public License for more details.
 
-define (DEFAULT_MSG, -1);
-define (CONGESTION_TONE, -2);
+define ('DEFAULT_MSG', -1);
+define ('CONGESTION_TONE', -2);
 
 function outroutemsg_get_config($engine) {
 	global $db;
