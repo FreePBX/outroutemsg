@@ -1,6 +1,7 @@
 <?php /* $Id: function.inc.php  $ */
 //Copyright (C) 2009 Philippe Lindheimer 
 //Copyright (C) 2009 Bandwidth.com
+//Copyright (C) 2010 Mikael Carlsson
 //
 //This program is free software; you can redistribute it and/or
 //modify it under the terms of the GNU General Public License
@@ -88,16 +89,23 @@ function outroutemsg_get_config($engine) {
 	}
 }
 
-function outroutemsg_add($default_msg_id, $intracompany_msg_id, $emergency_msg_id) {
+function outroutemsg_add($default_msg_id, $intracompany_msg_id, $emergency_msg_id, $no_answer_msg_id, $unalloc_msg_id, $no_transit_msg_id, $no_route_msg_id, $ch_unaccept_msg_id, $call_reject_msg_id, $nmbr_chngd_msg_id) {
 	global $db;
 
 	$default_msg_id      = $db->escapeSimple($default_msg_id);
 	$intracompany_msg_id = $db->escapeSimple($intracompany_msg_id);
 	$emergency_msg_id    = $db->escapeSimple($emergency_msg_id);
-
+	$no_answer_msg_id    = $db->escapeSimple($no_answer_msg_id);
+	$unalloc_msg_id      = $db->escapeSimple($unalloc_msg_id);
+	$no_transit_msg_id   = $db->escapeSimple($no_transit_msg_id);
+	$no_route_msg_id     = $db->escapeSimple($no_route_msg_id);
+	$ch_unaccept_msg_id  = $db->escapeSimple($ch_unaccept_msg_id);
+	$call_reject_msg_id  = $db->escapeSimple($call_reject_msg_id);
+	$nmbr_chngd_msg_id   = $db->escapeSimple($nmbr_chngd_msg_id);
+	
 	// in future will do in a outroutemsg_del but not needed for now
 	//
-	$sql = "DELETE FROM outroutemsg WHERE `keyword` IN  ('default_msg_id', 'intracompany_msg_id', 'emergency_msg_id')";
+	$sql = "DELETE FROM outroutemsg WHERE `keyword` IN  ('default_msg_id', 'intracompany_msg_id', 'emergency_msg_id', 'no_answer_msg_id', 'unalloc_msg_id', 'no_transit_msg_id', 'no_route_msg_id', 'ch_unaccept_msg_id', 'call_reject_msg_id', 'nmbr_chngd_msg_id')";
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
@@ -107,6 +115,13 @@ function outroutemsg_add($default_msg_id, $intracompany_msg_id, $emergency_msg_i
 		array('default_msg_id', "$default_msg_id"),
 		array('intracompany_msg_id', "$intracompany_msg_id"),
 		array('emergency_msg_id', "$emergency_msg_id"),
+		array('no_answer_msg_id', "$no_answer_msg_id"),
+		array('unalloc_msg_id', "$unalloc_msg_id"),
+		array('no_transit_msg_id', "$no_transit_msg_id"),
+		array('no_route_msg_id', "$no_route_msg_id"),
+		array('ch_unaccept_msg_id', "$ch_unaccept_msg_id"),
+		array('call_reject_msg_id', "$call_reject_msg_id"),
+		array('nmbr_chngd_msg_id', "$nmbr_chngd_msg_id"),
 		);
 
 	$compiled = $db->prepare('INSERT INTO outroutemsg (keyword, data) values (?,?)');
@@ -123,11 +138,16 @@ function outroutemsg_get() {
 	if(DB::IsError($results)) {
 		$results = array();
 	}
-
 	$results['default_msg_id']      = isset($results['default_msg_id'])      ? $results['default_msg_id']      : DEFAULT_MSG;
 	$results['intracompany_msg_id'] = isset($results['intracompany_msg_id']) ? $results['intracompany_msg_id'] : DEFAULT_MSG;
 	$results['emergency_msg_id']    = isset($results['emergency_msg_id'])    ? $results['emergency_msg_id']    : DEFAULT_MSG;
-
+	$results['no_answer_msg_id']    = isset($results['no_answer_msg_id'])    ? $results['no_answer_msg_id']    : DEFAULT_MSG;
+	$results['unalloc_msg_id']      = isset($results['unalloc_msg_id'])      ? $results['unalloc_msg_id']      : DEFAULT_MSG;
+	$results['no_transit_msg_id']   = isset($results['no_transit_msg_id'])   ? $results['no_transit_msg_id']   : DEFAULT_MSG;
+	$results['no_route_msg_id']     = isset($results['no_route_msg_id'])     ? $results['no_route_msg_id']     : DEFAULT_MSG;
+	$results['ch_unaccept_msg_id']  = isset($results['ch_unaccept_msg_id'])  ? $results['ch_unaccept_msg_id']  : DEFAULT_MSG;
+	$results['call_reject_msg_id']  = isset($results['call_reject_msg_id'])  ? $results['call_reject_msg_id']  : DEFAULT_MSG;
+	$results['nmbr_chngd_msg_id']   = isset($results['nmbr_chngd_msg_id'])   ? $results['nmbr_chngd_msg_id']   : DEFAULT_MSG;
 	return $results;
 }
 
