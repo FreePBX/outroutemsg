@@ -126,7 +126,7 @@ if ($action != 'submit') {
 
 <tr><td colspan="2"><h5><?php echo _("No Answer")?><hr></h5></td></tr>
 <tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if there was no answer. Defaul message is:<br>\"The number is not answering.\"<br> Hangupcause is 18 or 19")?></span></a></td>
+	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if there was no answer. Default message is:<br>\"The number is not answering.\"<br> Hangupcause is 18 or 19")?></span></a></td>
 	<td align=right>
 		<select name="no_answer_msg_id" id="no_answer_msg_id" tabindex="<?php echo ++$tabindex;?>">
 		<?php
