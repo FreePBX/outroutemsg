@@ -126,7 +126,7 @@ if ($action != 'submit') {
 
 <tr><td colspan="2"><h5><?php echo _("No Answer")?><hr></h5></td></tr>
 <tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if there was no answer. Hangupcause is 18 or 19")?></span></a></td>
+	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if there was no answer. Defaul message is:<br>\"The number is not answering.\"<br> Hangupcause is 18 or 19")?></span></a></td>
 	<td align=right>
 		<select name="no_answer_msg_id" id="no_answer_msg_id" tabindex="<?php echo ++$tabindex;?>">
 		<?php
@@ -144,7 +144,7 @@ if ($action != 'submit') {
 
 <tr><td colspan="2"><h5><?php echo _("Unallocated/Unassigned Number")?><hr></h5></td></tr>
 <tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports Unallocated/Unassigned number. Hangupcause is 27, 28 or 31")?></span></a></td>
+	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports Unallocated/Unassigned number. Default message is:<br>\"The number you have dialed is not in service. Please check the number and try again.\"<br>Hangupcause is 27, 28 or 31")?></span></a></td>
 	<td align=right>
 		<select name="unalloc_msg_id" id="unalloc_msg_id" tabindex="<?php echo ++$tabindex;?>">
 		<?php
@@ -162,7 +162,7 @@ if ($action != 'submit') {
 
 <tr><td colspan="2"><h5><?php echo _("No Route To Transit Network")?><hr></h5></td></tr>
 <tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports No Route to Transit Network. Hangupcause is 1 or 2")?></span></a></td>
+	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports No Route to Transit Network. Default message is:<br>\"Your call cannot be completed due to network error.\"<br>Hangupcause is 1 or 2")?></span></a></td>
 	<td align=right>
 		<select name="no_transit_msg_id" id="no_transit_msg_id" tabindex="<?php echo ++$tabindex;?>">
 		<?php
@@ -180,7 +180,7 @@ if ($action != 'submit') {
 
 <tr><td colspan="2"><h5><?php echo _("No Route To Destination")?><hr></h5></td></tr>
 <tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports No Route to Destination. Hangupcause is 3")?></span></a></td>
+	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports No Route to Destination. Default message is:<br>\"No route exists to the dialed destination.\"<br>Hangupcause is 3")?></span></a></td>
 	<td align=right>
 		<select name="no_route_msg_id" id="no_route_msg_id" tabindex="<?php echo ++$tabindex;?>">
 		<?php
@@ -198,7 +198,7 @@ if ($action != 'submit') {
 
 <tr><td colspan="2"><h5><?php echo _("Channel Unacceptable")?><hr></h5></td></tr>
 <tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports Channel Unacceptable. Hangupcause is 6")?></span></a></td>
+	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports Channel Unacceptable. Default message is:<br>\"The number you have dialed is not in service. Please check the number and try again.\"<br>Hangupcause is 6")?></span></a></td>
 	<td align=right>
 		<select name="ch_unaccept_msg_id" id="ch_unaccept_msg_id" tabindex="<?php echo ++$tabindex;?>">
 		<?php
@@ -216,7 +216,7 @@ if ($action != 'submit') {
 
 <tr><td colspan="2"><h5><?php echo _("Call Rejected")?><hr></h5></td></tr>
 <tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk rejected the call. Hangupcause is 21")?></span></a></td>
+	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk rejected the call. Default message is \"Call terminated\".<br>Hangupcause is 21")?></span></a></td>
 	<td align=right>
 		<select name="call_reject_msg_id" id="call_reject_msg_id" tabindex="<?php echo ++$tabindex;?>">
 		<?php
@@ -234,7 +234,7 @@ if ($action != 'submit') {
 
 <tr><td colspan="2"><h5><?php echo _("Number Changed")?><hr></h5></td></tr>
 <tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports Number Changed. Hangupcause is 22 or 23")?></span></a></td>
+	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports Number Changed. Default message is \"That number has been disconnected\".<br>Hangupcause is 22 or 23")?></span></a></td>
 	<td align=right>
 		<select name="nmbr_chngd_msg_id" id="nmbr_chngd_msg_id" tabindex="<?php echo ++$tabindex;?>">
 		<?php
