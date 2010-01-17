@@ -14,14 +14,14 @@
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
 # FreePBX language template for outroutemsg
-# Copyright (C) 2009 Bandwith.com
+# Copyright (C) 2009, 2010 Bandwith.com
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-23 19:28+0100\n"
+"POT-Creation-Date: 2010-01-17 17:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,49 +29,62 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.inc.php:143 page.outroutemsg.php:49
+#: functions.inc.php:164 page.outroutemsg.php:66
 msgid "Route Congestion Messages"
 msgstr ""
 
-#: page.outroutemsg.php:54
-msgid "Congested Route Options"
+#: install.php:40
+msgid "Can not create outroutemsg table"
 msgstr ""
 
-#: page.outroutemsg.php:56
+#: page.outroutemsg.php:67
+msgid "No Routes Available"
+msgstr ""
+
+#: page.outroutemsg.php:72
 msgid "Standard Routes"
 msgstr ""
 
-#: page.outroutemsg.php:58 page.outroutemsg.php:76 page.outroutemsg.php:94
+#: page.outroutemsg.php:74 page.outroutemsg.php:92 page.outroutemsg.php:110
+#: page.outroutemsg.php:129 page.outroutemsg.php:147 page.outroutemsg.php:165
+#: page.outroutemsg.php:183 page.outroutemsg.php:201 page.outroutemsg.php:219
+#: page.outroutemsg.php:237
 msgid "Message or Tone"
 msgstr ""
 
-#: page.outroutemsg.php:58
+#: page.outroutemsg.php:74
 msgid "Message or tone to be played if no trunks are available."
 msgstr ""
 
-#: page.outroutemsg.php:62 page.outroutemsg.php:80 page.outroutemsg.php:98
+#: page.outroutemsg.php:78 page.outroutemsg.php:96 page.outroutemsg.php:114
+#: page.outroutemsg.php:133 page.outroutemsg.php:151 page.outroutemsg.php:169
+#: page.outroutemsg.php:187 page.outroutemsg.php:205 page.outroutemsg.php:223
+#: page.outroutemsg.php:241
 msgid "Default Message"
 msgstr ""
 
-#: page.outroutemsg.php:63 page.outroutemsg.php:81 page.outroutemsg.php:99
+#: page.outroutemsg.php:79 page.outroutemsg.php:97 page.outroutemsg.php:115
+#: page.outroutemsg.php:134 page.outroutemsg.php:152 page.outroutemsg.php:170
+#: page.outroutemsg.php:188 page.outroutemsg.php:206 page.outroutemsg.php:224
+#: page.outroutemsg.php:242
 msgid "Congestion Tones"
 msgstr ""
 
-#: page.outroutemsg.php:74
+#: page.outroutemsg.php:90
 msgid "Intra-Company Routes"
 msgstr ""
 
-#: page.outroutemsg.php:76
+#: page.outroutemsg.php:92
 msgid ""
 "Message or tone to be played if no trunks are available. Used on routes "
 "marked as intra-company only."
 msgstr ""
 
-#: page.outroutemsg.php:92
+#: page.outroutemsg.php:108
 msgid "Emergency Routes"
 msgstr ""
 
-#: page.outroutemsg.php:94
+#: page.outroutemsg.php:110
 msgid ""
 "Message or tone to be played if no trunks are available. Used on all "
 "emergency routes. Consider a message instructing callers to find an "
@@ -79,6 +92,84 @@ msgid ""
 "alarm system panel."
 msgstr ""
 
-#: page.outroutemsg.php:110
+#: page.outroutemsg.php:125
+msgid "Trunk Failures"
+msgstr ""
+
+#: page.outroutemsg.php:127
+msgid "No Answer"
+msgstr ""
+
+#: page.outroutemsg.php:129
+msgid ""
+"Message or tone to be played if there was no answer. Default message is:<br>"
+"\"The number is not answering.\"<br> Hangupcause is 18 or 19"
+msgstr ""
+
+#: page.outroutemsg.php:145
+msgid "Unallocated/Unassigned Number"
+msgstr ""
+
+#: page.outroutemsg.php:147
+msgid ""
+"Message or tone to be played if trunk reports Unallocated/Unassigned number. "
+"Default message is:<br>\"The number you have dialed is not in service. "
+"Please check the number and try again.\"<br>Hangupcause is 27, 28 or 31"
+msgstr ""
+
+#: page.outroutemsg.php:163
+msgid "No Route To Transit Network"
+msgstr ""
+
+#: page.outroutemsg.php:165
+msgid ""
+"Message or tone to be played if trunk reports No Route to Transit Network. "
+"Default message is:<br>\"Your call cannot be completed due to network error."
+"\"<br>Hangupcause is 1 or 2"
+msgstr ""
+
+#: page.outroutemsg.php:181
+msgid "No Route To Destination"
+msgstr ""
+
+#: page.outroutemsg.php:183
+msgid ""
+"Message or tone to be played if trunk reports No Route to Destination. "
+"Default message is:<br>\"No route exists to the dialed destination."
+"\"<br>Hangupcause is 3"
+msgstr ""
+
+#: page.outroutemsg.php:199
+msgid "Channel Unacceptable"
+msgstr ""
+
+#: page.outroutemsg.php:201
+msgid ""
+"Message or tone to be played if trunk reports Channel Unacceptable. Default "
+"message is:<br>\"The number you have dialed is not in service. Please check "
+"the number and try again.\"<br>Hangupcause is 6"
+msgstr ""
+
+#: page.outroutemsg.php:217
+msgid "Call Rejected"
+msgstr ""
+
+#: page.outroutemsg.php:219
+msgid ""
+"Message or tone to be played if trunk rejected the call. Default message is "
+"\"Call terminated\".<br>Hangupcause is 21"
+msgstr ""
+
+#: page.outroutemsg.php:235
+msgid "Number Changed"
+msgstr ""
+
+#: page.outroutemsg.php:237
+msgid ""
+"Message or tone to be played if trunk reports Number Changed. Default "
+"message is \"That number has been disconnected\".<br>Hangupcause is 22 or 23"
+msgstr ""
+
+#: page.outroutemsg.php:254
 msgid "Submit Changes"
 msgstr ""

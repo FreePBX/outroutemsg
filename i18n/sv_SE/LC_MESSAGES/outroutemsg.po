@@ -1,0 +1,172 @@
+# This file is part of FreePBX.
+#
+#    FreePBX is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 2 of the License, or
+#    (at your option) any later version.
+#
+#    FreePBX is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
+#
+# FreePBX language template for announcement
+# Copyright (C) 2010 Mikael Carlsson, mickecamino@gmail.com
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreePBX outroutemsg\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-01-17 17:31+0100\n"
+"PO-Revision-Date: 2010-01-17 18:45+0100\n"
+"Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: SWEDISH\n"
+"X-Poedit-Country: Sweden\n"
+
+#: functions.inc.php:164
+#: page.outroutemsg.php:66
+msgid "Route Congestion Messages"
+msgstr "Överbelastningsmeddelanden"
+
+#: install.php:40
+msgid "Can not create outroutemsg table"
+msgstr "Kan inte skapa tabellen outroutemsg"
+
+#: page.outroutemsg.php:67
+msgid "No Routes Available"
+msgstr "Inga vägar tillgängliga"
+
+#: page.outroutemsg.php:72
+msgid "Standard Routes"
+msgstr "Standardväg"
+
+#: page.outroutemsg.php:74
+#: page.outroutemsg.php:92
+#: page.outroutemsg.php:110
+#: page.outroutemsg.php:129
+#: page.outroutemsg.php:147
+#: page.outroutemsg.php:165
+#: page.outroutemsg.php:183
+#: page.outroutemsg.php:201
+#: page.outroutemsg.php:219
+#: page.outroutemsg.php:237
+msgid "Message or Tone"
+msgstr "Meddelande eller ton"
+
+#: page.outroutemsg.php:74
+msgid "Message or tone to be played if no trunks are available."
+msgstr "Meddelande eller ton att spela upp om inga trunkar är tillgängliga."
+
+#: page.outroutemsg.php:78
+#: page.outroutemsg.php:96
+#: page.outroutemsg.php:114
+#: page.outroutemsg.php:133
+#: page.outroutemsg.php:151
+#: page.outroutemsg.php:169
+#: page.outroutemsg.php:187
+#: page.outroutemsg.php:205
+#: page.outroutemsg.php:223
+#: page.outroutemsg.php:241
+msgid "Default Message"
+msgstr "Standardmeddelande"
+
+#: page.outroutemsg.php:79
+#: page.outroutemsg.php:97
+#: page.outroutemsg.php:115
+#: page.outroutemsg.php:134
+#: page.outroutemsg.php:152
+#: page.outroutemsg.php:170
+#: page.outroutemsg.php:188
+#: page.outroutemsg.php:206
+#: page.outroutemsg.php:224
+#: page.outroutemsg.php:242
+msgid "Congestion Tones"
+msgstr "Överbelastningstoner"
+
+#: page.outroutemsg.php:90
+msgid "Intra-Company Routes"
+msgstr "Vägar inom företaget"
+
+#: page.outroutemsg.php:92
+msgid "Message or tone to be played if no trunks are available. Used on routes marked as intra-company only."
+msgstr "Meddelande eller ton att spela upp om inga trunkar är tillgängliga. Används endast på vägar markerade som intra-företag."
+
+#: page.outroutemsg.php:108
+msgid "Emergency Routes"
+msgstr "Nödvägar"
+
+#: page.outroutemsg.php:110
+msgid "Message or tone to be played if no trunks are available. Used on all emergency routes. Consider a message instructing callers to find an alternative means of calling emergency services such as a cell phone or alarm system panel."
+msgstr "Meddelande eller ton att spela upp om inga trunkar är tillgängliga. Används på alla nödvägar. Tala gärna in ett meddelande som instruerar uppringaren hur man hittar alternativ för nödsamtal såsom mobiltelefon eller larmpanel."
+
+#: page.outroutemsg.php:125
+msgid "Trunk Failures"
+msgstr "Trunkfel"
+
+#: page.outroutemsg.php:127
+msgid "No Answer"
+msgstr "Inget svar"
+
+#: page.outroutemsg.php:129
+msgid "Message or tone to be played if there was no answer. Default message is:<br>\"The number is not answering.\"<br> Hangupcause is 18 or 19"
+msgstr "Meddelande eller ton att spela upp vid inget svar. Standardmeddelande är:<br>\"Numret svarar ej.\"<br>Avslutningskod är 18 eller 19"
+
+#: page.outroutemsg.php:145
+msgid "Unallocated/Unassigned Number"
+msgstr "Numret finns inte"
+
+#: page.outroutemsg.php:147
+msgid "Message or tone to be played if trunk reports Unallocated/Unassigned number. Default message is:<br>\"The number you have dialed is not in service. Please check the number and try again.\"<br>Hangupcause is 27, 28 or 31"
+msgstr "Meddelande eller ton att spela upp om trunken rapporterar att numret inte finns. Standardmeddelande är:<br>\"Numret du har ring är inte i bruk. Kontrollera numret och försök igen.\"<br>. Avslutningskod är 27, 28 eller 31"
+
+#: page.outroutemsg.php:163
+msgid "No Route To Transit Network"
+msgstr "Ingen väg till mellannätverk"
+
+#: page.outroutemsg.php:165
+msgid "Message or tone to be played if trunk reports No Route to Transit Network. Default message is:<br>\"Your call cannot be completed due to network error.\"<br>Hangupcause is 1 or 2"
+msgstr "Meddelande eller ton att spela upp om trunken rapporterar ingen väg till mellannätverk. Standardmeddelandet är:<br>\"Ditt samtal kan ej kopplas på grund av ett nätverksfel,\"<br>Avlsutningskod är 1 eller 2"
+
+#: page.outroutemsg.php:181
+msgid "No Route To Destination"
+msgstr "Ingen väg till destinationen"
+
+#: page.outroutemsg.php:183
+msgid "Message or tone to be played if trunk reports No Route to Destination. Default message is:<br>\"No route exists to the dialed destination.\"<br>Hangupcause is 3"
+msgstr "Meddelande eller ton att spela upp om trunken rapporterar ingen väg till destinationen. Standardmeddelande är:<br>\"No route exists to the dialed destination.\"<br>Avslutningskod är 3"
+
+#: page.outroutemsg.php:199
+msgid "Channel Unacceptable"
+msgstr "Accepterar inte kanalen"
+
+#: page.outroutemsg.php:201
+msgid "Message or tone to be played if trunk reports Channel Unacceptable. Default message is:<br>\"The number you have dialed is not in service. Please check the number and try again.\"<br>Hangupcause is 6"
+msgstr "Meddelande att spela upp om trunken rapporterar: accepterar inte kanalen. Standardmeddelande är:<br>\"Numret du har ring är inte i bruk. Kontrollera numret och försök igen.\"<br> Avslutningskod är 6"
+
+#: page.outroutemsg.php:217
+msgid "Call Rejected"
+msgstr "Samtalsvägran"
+
+#: page.outroutemsg.php:219
+msgid "Message or tone to be played if trunk rejected the call. Default message is \"Call terminated\".<br>Hangupcause is 21"
+msgstr "Meddelande eller ton att spela upp om trunken vägrar att acceptera samtal. Standardmeddelande är:<br>\"Call terminated.\"<br>Avslutningskod är 21"
+
+#: page.outroutemsg.php:235
+msgid "Number Changed"
+msgstr "Numret är ändrat"
+
+#: page.outroutemsg.php:237
+msgid "Message or tone to be played if trunk reports Number Changed. Default message is \"That number has been disconnected\".<br>Hangupcause is 22 or 23"
+msgstr "Meddelande eller ton att spela upp om trunken rapporterar att numret har ändrats. Standardmeddelande är:<br>\"Det numret has been disconnected.\"<br>Avslutningskod är 22 eller 23"
+
+#: page.outroutemsg.php:254
+msgid "Submit Changes"
+msgstr "Spara ändringar"
+
