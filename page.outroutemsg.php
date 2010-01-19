@@ -142,107 +142,35 @@ if ($action != 'submit') {
 	</td>
 </tr>
 
-<tr><td colspan="2"><h5><?php echo _("Unallocated/Unassigned Number")?><hr></h5></td></tr>
+<tr><td colspan="2"><h5><?php echo _("Number or Address Incomplete")?><hr></h5></td></tr>
 <tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports Unallocated/Unassigned number. Default message is:<br>\"The number you have dialed is not in service. Please check the number and try again.\"<br>Hangupcause is 27, 28 or 31")?></span></a></td>
+	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports Number or Address Incomplete. Usually this means that the number you have dialed is to short. Default message is:<br>\"The number you have dialed is not in service. Please check the number and try again.\"<br>Hangupcause is 28")?></span></a></td>
 	<td align=right>
 		<select name="unalloc_msg_id" id="unalloc_msg_id" tabindex="<?php echo ++$tabindex;?>">
+		<?php
+			echo '<option value="'.DEFAULT_MSG.'"'.(DEFAULT_MSG == $invalidnmbr_msg_id ? ' SELECTED' : '').'>'._("Default Message")."</option>\n";
+			echo '<option value="'.CONGESTION_TONE.'"'.(CONGESTION_TONE == $invalidnmbr_msg_id ? ' SELECTED' : '').'>'._("Congestion Tones")."</option>\n";
+			if (isset($tresults[0])) {
+				foreach ($tresults as $tresult) {
+					echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $invalidnmbr_msg_id ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
+				}
+			}
+		?>
+		</select>
+	</td>
+</tr>
+
+<tr><td colspan="2"><h5><?php echo _("Unallocated Number")?><hr></h5></td></tr>
+<tr>
+	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports Unallocated Number. Usually this means that the number dialed does not exist. Default message is:<br>\"The number you have dialed is not in service. Please check the number and try again.\"<br>Hangupcause is 1")?></span></a></td>
+	<td align=right>
+		<select name="no_transit_msg_id" id="no_transit_msg_id" tabindex="<?php echo ++$tabindex;?>">
 		<?php
 			echo '<option value="'.DEFAULT_MSG.'"'.(DEFAULT_MSG == $unalloc_msg_id ? ' SELECTED' : '').'>'._("Default Message")."</option>\n";
 			echo '<option value="'.CONGESTION_TONE.'"'.(CONGESTION_TONE == $unalloc_msg_id ? ' SELECTED' : '').'>'._("Congestion Tones")."</option>\n";
 			if (isset($tresults[0])) {
 				foreach ($tresults as $tresult) {
 					echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $unalloc_msg_id ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
-				}
-			}
-		?>
-		</select>
-	</td>
-</tr>
-
-<tr><td colspan="2"><h5><?php echo _("No Route To Transit Network")?><hr></h5></td></tr>
-<tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports No Route to Transit Network. Default message is:<br>\"Your call cannot be completed due to network error.\"<br>Hangupcause is 1 or 2")?></span></a></td>
-	<td align=right>
-		<select name="no_transit_msg_id" id="no_transit_msg_id" tabindex="<?php echo ++$tabindex;?>">
-		<?php
-			echo '<option value="'.DEFAULT_MSG.'"'.(DEFAULT_MSG == $no_transit_msg_id ? ' SELECTED' : '').'>'._("Default Message")."</option>\n";
-			echo '<option value="'.CONGESTION_TONE.'"'.(CONGESTION_TONE == $no_transit_msg_id ? ' SELECTED' : '').'>'._("Congestion Tones")."</option>\n";
-			if (isset($tresults[0])) {
-				foreach ($tresults as $tresult) {
-					echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $no_transit_msg_id ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
-				}
-			}
-		?>
-		</select>
-	</td>
-</tr>
-
-<tr><td colspan="2"><h5><?php echo _("No Route To Destination")?><hr></h5></td></tr>
-<tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports No Route to Destination. Default message is:<br>\"No route exists to the dialed destination.\"<br>Hangupcause is 3")?></span></a></td>
-	<td align=right>
-		<select name="no_route_msg_id" id="no_route_msg_id" tabindex="<?php echo ++$tabindex;?>">
-		<?php
-			echo '<option value="'.DEFAULT_MSG.'"'.(DEFAULT_MSG == $no_route_msg_id ? ' SELECTED' : '').'>'._("Default Message")."</option>\n";
-			echo '<option value="'.CONGESTION_TONE.'"'.(CONGESTION_TONE == $no_route_msg_id ? ' SELECTED' : '').'>'._("Congestion Tones")."</option>\n";
-			if (isset($tresults[0])) {
-				foreach ($tresults as $tresult) {
-					echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $no_route_msg_id ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
-				}
-			}
-		?>
-		</select>
-	</td>
-</tr>
-
-<tr><td colspan="2"><h5><?php echo _("Channel Unacceptable")?><hr></h5></td></tr>
-<tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports Channel Unacceptable. Default message is:<br>\"The number you have dialed is not in service. Please check the number and try again.\"<br>Hangupcause is 6")?></span></a></td>
-	<td align=right>
-		<select name="ch_unaccept_msg_id" id="ch_unaccept_msg_id" tabindex="<?php echo ++$tabindex;?>">
-		<?php
-			echo '<option value="'.DEFAULT_MSG.'"'.(DEFAULT_MSG == $ch_unaccept_msg_id ? ' SELECTED' : '').'>'._("Default Message")."</option>\n";
-			echo '<option value="'.CONGESTION_TONE.'"'.(CONGESTION_TONE == $ch_unaccept_msg_id ? ' SELECTED' : '').'>'._("Congestion Tones")."</option>\n";
-			if (isset($tresults[0])) {
-				foreach ($tresults as $tresult) {
-					echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $ch_unaccept_msg_id ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
-				}
-			}
-		?>
-		</select>
-	</td>
-</tr>
-
-<tr><td colspan="2"><h5><?php echo _("Call Rejected")?><hr></h5></td></tr>
-<tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk rejected the call. Default message is \"Call terminated\".<br>Hangupcause is 21")?></span></a></td>
-	<td align=right>
-		<select name="call_reject_msg_id" id="call_reject_msg_id" tabindex="<?php echo ++$tabindex;?>">
-		<?php
-			echo '<option value="'.DEFAULT_MSG.'"'.(DEFAULT_MSG == $call_reject_msg_id ? ' SELECTED' : '').'>'._("Default Message")."</option>\n";
-			echo '<option value="'.CONGESTION_TONE.'"'.(CONGESTION_TONE == $call_reject_msg_id ? ' SELECTED' : '').'>'._("Congestion Tones")."</option>\n";
-			if (isset($tresults[0])) {
-				foreach ($tresults as $tresult) {
-					echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $call_reject_msg_id ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
-				}
-			}
-		?>
-		</select>
-	</td>
-</tr>
-
-<tr><td colspan="2"><h5><?php echo _("Number Changed")?><hr></h5></td></tr>
-<tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports Number Changed. Default message is \"That number has been disconnected\".<br>Hangupcause is 22 or 23")?></span></a></td>
-	<td align=right>
-		<select name="nmbr_chngd_msg_id" id="nmbr_chngd_msg_id" tabindex="<?php echo ++$tabindex;?>">
-		<?php
-			echo '<option value="'.DEFAULT_MSG.'"'.(DEFAULT_MSG == $nmbr_chngd_msg_id ? ' SELECTED' : '').'>'._("Default Message")."</option>\n";
-			echo '<option value="'.CONGESTION_TONE.'"'.(CONGESTION_TONE == $nmbr_chngd_msg_id ? ' SELECTED' : '').'>'._("Congestion Tones")."</option>\n";
-			if (isset($tresults[0])) {
-				foreach ($tresults as $tresult) {
-					echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $nmbr_chngd_msg_id ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
 				}
 			}
 		?>
