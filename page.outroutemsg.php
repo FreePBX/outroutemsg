@@ -29,15 +29,11 @@ if($action){
 	$intracompany_msg_id = isset($_REQUEST['intracompany_msg_id']) ? trim($_REQUEST['intracompany_msg_id']) : DEFAULT_MSG;
 	$emergency_msg_id    = isset($_REQUEST['emergency_msg_id'])    ? trim($_REQUEST['emergency_msg_id'])    : DEFAULT_MSG;
 	$no_answer_msg_id    = isset($_REQUEST['no_answer_msg_id'])    ? trim($_REQUEST['no_answer_msg_id'])    : DEFAULT_MSG;	
-	$unalloc_msg_id      = isset($_REQUEST['unalloc_msg_id'])      ? trim($_REQUEST['unalloc_msg_id'])      : DEFAULT_MSG;
-	$no_transit_msg_id   = isset($_REQUEST['no_transit_msg_id'])   ? trim($_REQUEST['no_transit_msg_id'])   : DEFAULT_MSG;	
-	$no_route_msg_id     = isset($_REQUEST['no_route_msg_id'])     ? trim($_REQUEST['no_route_msg_id'])     : DEFAULT_MSG;
-	$ch_unaccept_msg_id  = isset($_REQUEST['ch_unaccept_msg_id'])  ? trim($_REQUEST['ch_unaccept_msg_id'])  : DEFAULT_MSG;
-	$call_reject_msg_id  = isset($_REQUEST['call_reject_msg_id'])  ? trim($_REQUEST['call_reject_msg_id'])  : DEFAULT_MSG;
-	$nmbr_chngd_msg_id   = isset($_REQUEST['nmbr_chngd_msg_id'])   ? trim($_REQUEST['nmbr_chngd_msg_id'])   : DEFAULT_MSG;
+	$invalidnmbr_msg_id  = isset($_REQUEST['invalidnmbr_msg_id'])  ? trim($_REQUEST['invalidnmbr_msg_id'])  : DEFAULT_MSG;
+	$unalloc_msg_id      = isset($_REQUEST['unalloc_msg_id'])      ? trim($_REQUEST['unalloc_msg_id'])      : DEFAULT_MSG;	
 
 	if ($action == 'submit') {
-		outroutemsg_add($default_msg_id, $intracompany_msg_id, $emergency_msg_id, $no_answer_msg_id, $unalloc_msg_id, $no_transit_msg_id, $no_route_msg_id, $ch_unaccept_msg_id, $call_reject_msg_id, $nmbr_chngd_msg_id);
+		outroutemsg_add($default_msg_id, $intracompany_msg_id, $emergency_msg_id, $no_answer_msg_id, $invalidnmbr_msg_id, $unalloc_msg_id);
 		needreload();
 	}
 }
@@ -54,12 +50,8 @@ if ($action != 'submit') {
 	$intracompany_msg_id = $outroutemsg_settings['intracompany_msg_id'];
 	$emergency_msg_id    = $outroutemsg_settings['emergency_msg_id'];
 	$no_answer_msg_id    = $outroutemsg_settings['no_answer_msg_id'];
+	$invalidnmbr_msg_id  = $outroutemsg_settings['invalidnmbr_msg_id'];
 	$unalloc_msg_id      = $outroutemsg_settings['unalloc_msg_id'];
-	$no_transit_msg_id   = $outroutemsg_settings['no_transit_msg_id'];
-	$no_route_msg_id     = $outroutemsg_settings['no_route_msg_id'];
-	$ch_unaccept_msg_id  = $outroutemsg_settings['ch_unaccept_msg_id'];
-	$call_reject_msg_id  = $outroutemsg_settings['call_reject_msg_id'];
-	$nmbr_chngd_msg_id   = $outroutemsg_settings['nmbr_chngd_msg_id'];	
 }
 
 ?>
@@ -146,7 +138,7 @@ if ($action != 'submit') {
 <tr>
 	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports Number or Address Incomplete. Usually this means that the number you have dialed is to short. Default message is:<br>\"The number you have dialed is not in service. Please check the number and try again.\"<br>Hangupcause is 28")?></span></a></td>
 	<td align=right>
-		<select name="unalloc_msg_id" id="unalloc_msg_id" tabindex="<?php echo ++$tabindex;?>">
+		<select name="invalidnmbr_msg_id" id="invalidnmbr_msg_id" tabindex="<?php echo ++$tabindex;?>">
 		<?php
 			echo '<option value="'.DEFAULT_MSG.'"'.(DEFAULT_MSG == $invalidnmbr_msg_id ? ' SELECTED' : '').'>'._("Default Message")."</option>\n";
 			echo '<option value="'.CONGESTION_TONE.'"'.(CONGESTION_TONE == $invalidnmbr_msg_id ? ' SELECTED' : '').'>'._("Congestion Tones")."</option>\n";
@@ -164,7 +156,7 @@ if ($action != 'submit') {
 <tr>
 	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports Unallocated Number. Usually this means that the number dialed does not exist. Default message is:<br>\"The number you have dialed is not in service. Please check the number and try again.\"<br>Hangupcause is 1")?></span></a></td>
 	<td align=right>
-		<select name="no_transit_msg_id" id="no_transit_msg_id" tabindex="<?php echo ++$tabindex;?>">
+		<select name="unalloc_msg_id" id="unalloc_msg_id" tabindex="<?php echo ++$tabindex;?>">
 		<?php
 			echo '<option value="'.DEFAULT_MSG.'"'.(DEFAULT_MSG == $unalloc_msg_id ? ' SELECTED' : '').'>'._("Default Message")."</option>\n";
 			echo '<option value="'.CONGESTION_TONE.'"'.(CONGESTION_TONE == $unalloc_msg_id ? ' SELECTED' : '').'>'._("Congestion Tones")."</option>\n";
