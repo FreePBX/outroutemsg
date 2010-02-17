@@ -22,6 +22,6 @@
 	<depends>
 		<module>recordings ge 3.3.8</module>
 	</depends>
-	<location>release/2.7/outroutemsg-2.7.0.0.tgz</location>
-	<md5sum>9f7bb642d661fdd8d00f74808d3a22c0</md5sum>
+	<location>release/2.7/outroutemsg-2.7.0.1.tgz</location>
+	<md5sum>f22c4395639390f0a8c2dbd01f6473c1</md5sum>
 </module>
