@@ -14,14 +14,13 @@
 #    along with FreePBX.  If not, see <http://www.gnu.org/licenses/>.
 #
 # FreePBX language template for outroutemsg
-# Copyright (C) 2009, 2010 Bandwith.com
+# Copyright (C) 2008, 2009, 2010 Bandwith.com
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-01-19 17:24+0100\n"
+"POT-Creation-Date: 2010-02-18 22:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,56 +28,71 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: functions.inc.php:152 page.outroutemsg.php:66
+#: outroutemsg/functions.inc.php:153 outroutemsg/outroutemsg.i18n.php:5
+#: outroutemsg/outroutemsg.i18n.php:11 outroutemsg/page.outroutemsg.php:58
 msgid "Route Congestion Messages"
 msgstr ""
 
-#: install.php:40
+#: outroutemsg/install.php:40
 msgid "Can not create outroutemsg table"
 msgstr ""
 
-#: page.outroutemsg.php:67
+#: outroutemsg/outroutemsg.i18n.php:7
+msgid "System Administration"
+msgstr ""
+
+#: outroutemsg/outroutemsg.i18n.php:9
+msgid ""
+"Configures message or congestion tones played when all trunks are busy in a "
+"route. Allows different messages for Emergency Routes and Intra-Company "
+"Routes"
+msgstr ""
+
+#: outroutemsg/page.outroutemsg.php:59
 msgid "No Routes Available"
 msgstr ""
 
-#: page.outroutemsg.php:72
+#: outroutemsg/page.outroutemsg.php:64
 msgid "Standard Routes"
 msgstr ""
 
-#: page.outroutemsg.php:74 page.outroutemsg.php:92 page.outroutemsg.php:110
-#: page.outroutemsg.php:129 page.outroutemsg.php:147 page.outroutemsg.php:165
+#: outroutemsg/page.outroutemsg.php:66 outroutemsg/page.outroutemsg.php:84
+#: outroutemsg/page.outroutemsg.php:102 outroutemsg/page.outroutemsg.php:121
+#: outroutemsg/page.outroutemsg.php:139 outroutemsg/page.outroutemsg.php:157
 msgid "Message or Tone"
 msgstr ""
 
-#: page.outroutemsg.php:74
+#: outroutemsg/page.outroutemsg.php:66
 msgid "Message or tone to be played if no trunks are available."
 msgstr ""
 
-#: page.outroutemsg.php:78 page.outroutemsg.php:96 page.outroutemsg.php:114
-#: page.outroutemsg.php:133 page.outroutemsg.php:151 page.outroutemsg.php:169
+#: outroutemsg/page.outroutemsg.php:70 outroutemsg/page.outroutemsg.php:88
+#: outroutemsg/page.outroutemsg.php:106 outroutemsg/page.outroutemsg.php:125
+#: outroutemsg/page.outroutemsg.php:143 outroutemsg/page.outroutemsg.php:161
 msgid "Default Message"
 msgstr ""
 
-#: page.outroutemsg.php:79 page.outroutemsg.php:97 page.outroutemsg.php:115
-#: page.outroutemsg.php:134 page.outroutemsg.php:152 page.outroutemsg.php:170
+#: outroutemsg/page.outroutemsg.php:71 outroutemsg/page.outroutemsg.php:89
+#: outroutemsg/page.outroutemsg.php:107 outroutemsg/page.outroutemsg.php:126
+#: outroutemsg/page.outroutemsg.php:144 outroutemsg/page.outroutemsg.php:162
 msgid "Congestion Tones"
 msgstr ""
 
-#: page.outroutemsg.php:90
+#: outroutemsg/page.outroutemsg.php:82
 msgid "Intra-Company Routes"
 msgstr ""
 
-#: page.outroutemsg.php:92
+#: outroutemsg/page.outroutemsg.php:84
 msgid ""
 "Message or tone to be played if no trunks are available. Used on routes "
 "marked as intra-company only."
 msgstr ""
 
-#: page.outroutemsg.php:108
+#: outroutemsg/page.outroutemsg.php:100
 msgid "Emergency Routes"
 msgstr ""
 
-#: page.outroutemsg.php:110
+#: outroutemsg/page.outroutemsg.php:102
 msgid ""
 "Message or tone to be played if no trunks are available. Used on all "
 "emergency routes. Consider a message instructing callers to find an "
@@ -86,25 +100,25 @@ msgid ""
 "alarm system panel."
 msgstr ""
 
-#: page.outroutemsg.php:125
+#: outroutemsg/page.outroutemsg.php:117
 msgid "Trunk Failures"
 msgstr ""
 
-#: page.outroutemsg.php:127
+#: outroutemsg/page.outroutemsg.php:119
 msgid "No Answer"
 msgstr ""
 
-#: page.outroutemsg.php:129
+#: outroutemsg/page.outroutemsg.php:121
 msgid ""
 "Message or tone to be played if there was no answer. Default message is:<br>"
 "\"The number is not answering.\"<br> Hangupcause is 18 or 19"
 msgstr ""
 
-#: page.outroutemsg.php:145
+#: outroutemsg/page.outroutemsg.php:137
 msgid "Number or Address Incomplete"
 msgstr ""
 
-#: page.outroutemsg.php:147
+#: outroutemsg/page.outroutemsg.php:139
 msgid ""
 "Message or tone to be played if trunk reports Number or Address Incomplete. "
 "Usually this means that the number you have dialed is to short. Default "
@@ -112,11 +126,11 @@ msgid ""
 "the number and try again.\"<br>Hangupcause is 28"
 msgstr ""
 
-#: page.outroutemsg.php:163
+#: outroutemsg/page.outroutemsg.php:155
 msgid "Unallocated Number"
 msgstr ""
 
-#: page.outroutemsg.php:165
+#: outroutemsg/page.outroutemsg.php:157
 msgid ""
 "Message or tone to be played if trunk reports Unallocated Number. Usually "
 "this means that the number dialed does not exist. Default message is:<br>"
@@ -124,6 +138,6 @@ msgid ""
 "try again.\"<br>Hangupcause is 1"
 msgstr ""
 
-#: page.outroutemsg.php:182
+#: outroutemsg/page.outroutemsg.php:174
 msgid "Submit Changes"
 msgstr ""
