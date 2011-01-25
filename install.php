@@ -12,18 +12,6 @@
 //MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //GNU General Public License for more details.
 
-if (! function_exists("out")) {
-	function out($text) {
-		echo $text."<br />";
-	}
-}
-
-if (! function_exists("outn")) {
-	function outn($text) {
-		echo $text;
-	}
-}
-
 global $db;
 global $amp_conf;
 
