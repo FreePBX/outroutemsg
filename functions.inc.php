@@ -90,7 +90,7 @@ function outroutemsg_get_config($engine) {
 	}
 }
 
-function outroutemsg_add($default_msg_id, $intracompany_msg_id, $emergency_msg_id, $no_answer_msg_id, $invalidnmbr_msg_id, $unalloc_msg_id) {
+function outroutemsg_add($default_msg_id, $intracompany_msg_id, $emergency_msg_id, $no_answer_msg_id, $invalidnmbr_msg_id) {
 	global $db;
 
 	$default_msg_id      = $db->escapeSimple($default_msg_id);
@@ -98,11 +98,10 @@ function outroutemsg_add($default_msg_id, $intracompany_msg_id, $emergency_msg_i
 	$emergency_msg_id    = $db->escapeSimple($emergency_msg_id);
 	$no_answer_msg_id    = $db->escapeSimple($no_answer_msg_id);
 	$invalidnmbr_msg_id  = $db->escapeSimple($invalidnmbr_msg_id);
-	$unalloc_msg_id      = $db->escapeSimple($unalloc_msg_id);
 	
 	// in future will do in a outroutemsg_del but not needed for now
 	//
-	$sql = "DELETE FROM outroutemsg WHERE `keyword` IN  ('default_msg_id', 'intracompany_msg_id', 'emergency_msg_id', 'no_answer_msg_id', 'invalidnmbr_msg_id', 'unalloc_msg_id')";
+	$sql = "DELETE FROM outroutemsg WHERE `keyword` IN  ('default_msg_id', 'intracompany_msg_id', 'emergency_msg_id', 'no_answer_msg_id', 'invalidnmbr_msg_id')";
 	$result = $db->query($sql);
 	if(DB::IsError($result)) {
 		die_freepbx($result->getMessage().$sql);
@@ -114,7 +113,6 @@ function outroutemsg_add($default_msg_id, $intracompany_msg_id, $emergency_msg_i
 		array('emergency_msg_id', "$emergency_msg_id"),
 		array('no_answer_msg_id', "$no_answer_msg_id"),
 		array('invalidnmbr_msg_id', "$invalidnmbr_msg_id"),
-		array('unalloc_msg_id', "$unalloc_msg_id"),
 		);
 
 	$compiled = $db->prepare('INSERT INTO outroutemsg (keyword, data) values (?,?)');
@@ -136,7 +134,6 @@ function outroutemsg_get() {
 	$results['emergency_msg_id']    = isset($results['emergency_msg_id'])    ? $results['emergency_msg_id']    : DEFAULT_MSG;
 	$results['no_answer_msg_id']    = isset($results['no_answer_msg_id'])    ? $results['no_answer_msg_id']    : DEFAULT_MSG;
 	$results['invalidnmbr_msg_id']  = isset($results['invalidnmbr_msg_id'])  ? $results['invalidnmbr_msg_id']  : DEFAULT_MSG;
-	$results['unalloc_msg_id']      = isset($results['unalloc_msg_id'])      ? $results['unalloc_msg_id']      : DEFAULT_MSG;
 	return $results;
 }
 

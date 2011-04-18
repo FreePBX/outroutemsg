@@ -30,10 +30,9 @@ if($action){
 	$emergency_msg_id    = isset($_REQUEST['emergency_msg_id'])    ? trim($_REQUEST['emergency_msg_id'])    : DEFAULT_MSG;
 	$no_answer_msg_id    = isset($_REQUEST['no_answer_msg_id'])    ? trim($_REQUEST['no_answer_msg_id'])    : DEFAULT_MSG;	
 	$invalidnmbr_msg_id  = isset($_REQUEST['invalidnmbr_msg_id'])  ? trim($_REQUEST['invalidnmbr_msg_id'])  : DEFAULT_MSG;
-	$unalloc_msg_id      = isset($_REQUEST['unalloc_msg_id'])      ? trim($_REQUEST['unalloc_msg_id'])      : DEFAULT_MSG;	
 
 	if ($action == 'submit') {
-		outroutemsg_add($default_msg_id, $intracompany_msg_id, $emergency_msg_id, $no_answer_msg_id, $invalidnmbr_msg_id, $unalloc_msg_id);
+		outroutemsg_add($default_msg_id, $intracompany_msg_id, $emergency_msg_id, $no_answer_msg_id, $invalidnmbr_msg_id);
 		needreload();
 	}
 }
@@ -51,7 +50,6 @@ if ($action != 'submit') {
 	$emergency_msg_id    = $outroutemsg_settings['emergency_msg_id'];
 	$no_answer_msg_id    = $outroutemsg_settings['no_answer_msg_id'];
 	$invalidnmbr_msg_id  = $outroutemsg_settings['invalidnmbr_msg_id'];
-	$unalloc_msg_id      = $outroutemsg_settings['unalloc_msg_id'];
 }
 
 ?>
@@ -145,24 +143,6 @@ if ($action != 'submit') {
 			if (isset($tresults[0])) {
 				foreach ($tresults as $tresult) {
 					echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $invalidnmbr_msg_id ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
-				}
-			}
-		?>
-		</select>
-	</td>
-</tr>
-
-<tr><td colspan="2"><h5><?php echo _("Unallocated Number")?><hr></h5></td></tr>
-<tr>
-	<td><a href="#" class="info"><?php echo _("Message or Tone")?><span><?php echo _("Message or tone to be played if trunk reports Unallocated Number. Usually this means that the number dialed does not exist. Default message is:<br>\"The number you have dialed is not in service. Please check the number and try again.\"<br>Hangupcause is 1")?></span></a></td>
-	<td align=right>
-		<select name="unalloc_msg_id" id="unalloc_msg_id" tabindex="<?php echo ++$tabindex;?>">
-		<?php
-			echo '<option value="'.DEFAULT_MSG.'"'.(DEFAULT_MSG == $unalloc_msg_id ? ' SELECTED' : '').'>'._("Default Message")."</option>\n";
-			echo '<option value="'.CONGESTION_TONE.'"'.(CONGESTION_TONE == $unalloc_msg_id ? ' SELECTED' : '').'>'._("Congestion Tones")."</option>\n";
-			if (isset($tresults[0])) {
-				foreach ($tresults as $tresult) {
-					echo '<option value="'.$tresult['id'].'"'.($tresult['id'] == $unalloc_msg_id ? ' SELECTED' : '').'>'.$tresult['displayname']."</option>\n";
 				}
 			}
 		?>
