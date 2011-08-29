@@ -36,10 +36,7 @@ if($action){
 		needreload();
 	}
 }
-?>
-</div>
-<div class="content">
-<?php
+
 
 // get the outroutemsg settings if not a submit
 //

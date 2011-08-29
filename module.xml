@@ -5,8 +5,7 @@
 	<version>2.9.0.1</version>
 	<publisher>Bandwidth.com</publisher>
 	<license>GPLv2</license>
-	<type>tool</type>
-	<category>System Administration</category>
+	<category>Settings</category>
 	<description>Configures message or congestion tones played when all trunks are busy in a route. Allows different messages for Emergency Routes and Intra-Company Routes
 	</description>
 	<menuitems>
@@ -15,14 +14,6 @@
 	<changelog>
 		*2.9.0.1* removed duplicate functions
 		*2.9.0.0* 2.9 Update
-		*2.8.0.0* published 2.8 version
-		*2.7.0.2* localizations
-		*2.7.0.1* #4042
-		*2.7.0.0* #3805
-		*2.6.0.3* #3865
-		*2.6.0.2* minor tootlip tweaks
-		*2.6.0.1* init tabindex
-		*2.6.0* Initial Version
 	</changelog>
 	<depends>
 		<module>recordings ge 3.3.8</module>
