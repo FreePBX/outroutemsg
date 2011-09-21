@@ -2,7 +2,7 @@
 	<rawname>outroutemsg</rawname>
 	<repo>standard</repo>
 	<name>Route Congestion Messages</name>
-	<version>2.9.0.1</version>
+	<version>2.10.0.0</version>
 	<publisher>Bandwidth.com</publisher>
 	<license>GPLv2</license>
 	<category>Settings</category>
@@ -12,12 +12,13 @@
 		<outroutemsg>Route Congestion Messages</outroutemsg>
 	</menuitems>
 	<changelog>
+		*2.10.0.0* new version changes
 		*2.9.0.1* removed duplicate functions
 		*2.9.0.0* 2.9 Update
 	</changelog>
 	<depends>
 		<module>recordings ge 3.3.8</module>
 	</depends>
-	<location>release/2.9/outroutemsg-2.9.0.1.tgz</location>
-	<md5sum>e51ad00e4567c3462ee4733d3afe6458</md5sum>
+	<location>release/2.10/outroutemsg-2.10.0.0.tgz</location>
+	<md5sum>3dc2e9e2e5e87092553cfa912962266c</md5sum>
 </module>
