@@ -1,4 +1,5 @@
 <?php
+if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 //Copyright (C) 2009 Philippe Lindheimer 
 //Copyright (C) 2009 Bandwidth.com
 //
