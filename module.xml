@@ -22,4 +22,4 @@
 	</depends>
 	<location>release/2.10/outroutemsg-2.10.0.1.tgz</location>
 	<md5sum>e992c1d2af20110948b9848d37b87ee0</md5sum>
-</module>
+<supported><version>2.10</version></supported></module>
