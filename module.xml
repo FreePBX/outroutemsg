@@ -2,9 +2,10 @@
   <rawname>outroutemsg</rawname>
   <repo>standard</repo>
   <name>Route Congestion Messages</name>
-  <version>2.11.0.0</version>
-  <publisher>Bandwidth.com</publisher>
-  <license>GPLv2</license>
+  <version>2.11.0.1</version>
+  <publisher>Schmooze Com Inc</publisher>
+	<license>GPLv3+</license>
+	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
   <category>Settings</category>
   <description>Configures message or congestion tones played when all trunks are busy in a route. Allows different messages for Emergency Routes and Intra-Company Routes
 	</description>
@@ -12,6 +13,7 @@
     <outroutemsg>Route Congestion Messages</outroutemsg>
   </menuitems>
   <changelog>
+  		*2.11.0.2* Add license file
 		*2.11.0.0* bump version
 		*2.10.0.1* #5478 
 		*2.10.0.0* new version changes

@@ -1,18 +1,5 @@
 <?php /* $Id: page.outroutemsg.php  $ */
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
-//Copyright (C) 2009 Philippe Lindheimer 
-//Copyright (C) 2009 Bandwidth.com
-//Copyright (C) 2010 Mikael Carlsson
-//
-//This program is free software; you can redistribute it and/or
-//modify it under the terms of the GNU General Public License
-//as published by the Free Software Foundation version 2
-//of the License.
-//
-//This program is distributed in the hope that it will be useful,
-//but WITHOUT ANY WARRANTY; without even the implied warranty of
-//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-//GNU General Public License for more details.
 
 define (DEFAULT_MSG, -1);
 define (CONGESTION_TONE, -2);
