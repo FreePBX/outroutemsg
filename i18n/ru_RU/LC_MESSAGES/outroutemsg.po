@@ -2,12 +2,11 @@
 # Copyright (c) 2006-2012 PostMet Corporation
 # This file is distributed under the same license as the freePBX package.
 # Alexander Kozyrev <ceo@postmet.com>, Alexander Anikin <may@postmet.com>, 2006-2012.
-
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-07 21:40+0200\n"
+"POT-Creation-Date: 2015-02-11 18:02-0500\n"
 "PO-Revision-Date: 2012-11-02 17:00+0100\n"
 "Last-Translator: Alexander Kozyrev <ceo@postmet.com>\n"
 "Language-Team: Russian <faq@postmet.com>\n"
@@ -15,91 +14,127 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Route Congestion Messages"
-msgstr "Сообщения о проблемах на маршруте"
-
+#: /usr/src/freepbx/outroutemsg/install.php:17
 msgid "Can not create outroutemsg table"
 msgstr "Невозможно создать таблицу outroutemsg"
 
-msgid "Settings"
-msgstr "Установки"
-
-msgid ""
-"Configures message or congestion tones played when all trunks are busy in a "
-"route. Allows different messages for Emergency Routes and Intra-Company "
-"Routes"
-msgstr ""
-"Конфигурирует сообщения или тональные сигналы проблем когда все транки на маршруте "
-"заняты. Допускаются разные сообщения для аварийных и внутрикорпоративных маршрутов." 
-
-msgid "No Routes Available"
-msgstr "Нет доступных маршрутов"
-
-msgid "Standard Routes"
-msgstr "Стандартные маршруты"
-
-msgid "Message or Tone"
-msgstr "Сообщение или тональный сигнал"
-
-msgid "Message or tone to be played if no trunks are available."
-msgstr "Будет воспроизводиться сообщение или тональный сигнал при отсутствии доступных транков."
-
-msgid "Default Message"
-msgstr "Сообщение по умолчанию"
-
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:54
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:72
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:90
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:109
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:127
 msgid "Congestion Tones"
 msgstr "Тональные сигналы при проблемах на транке"
 
-msgid "Intra-Company Routes"
-msgstr "Внутрикорпоративные маршруты"
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:53
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:71
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:89
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:108
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:126
+msgid "Default Message"
+msgstr "Сообщение по умолчанию"
 
-msgid ""
-"Message or tone to be played if no trunks are available. Used on routes "
-"marked as intra-company only."
-msgstr ""
-"Сообщение или тональные сигналы, которые будут воспроизводиться при отстутствии "
-"доступных транков. Используются только на внутрикорпоративных маршрутах."
-
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:83
 msgid "Emergency Routes"
 msgstr "Аварийные маршруты"
 
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:65
+msgid "Intra-Company Routes"
+msgstr "Внутрикорпоративные маршруты"
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:49
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:67
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:85
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:104
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:122
+msgid "Message or Tone"
+msgstr "Сообщение или тональный сигнал"
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:49
+msgid "Message or tone to be played if no trunks are available."
+msgstr ""
+"Будет воспроизводиться сообщение или тональный сигнал при отсутствии "
+"доступных транков."
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:85
 msgid ""
 "Message or tone to be played if no trunks are available. Used on all "
 "emergency routes. Consider a message instructing callers to find an "
 "alternative means of calling emergency services such as a cell phone or "
 "alarm system panel."
 msgstr ""
-"Сообщение или тональные сигналы, которые будут воспроизводиться при отстутствии "
-"доступных транков. Предлагаются речевые сообщения о поиске альтернативных способов "
-"связи. Например вызвать службы экстренной помощи через мобильный телефон или системы "
-"охранной сигнализации." 
+"Сообщение или тональные сигналы, которые будут воспроизводиться при "
+"отстутствии доступных транков. Предлагаются речевые сообщения о поиске "
+"альтернативных способов связи. Например вызвать службы экстренной помощи "
+"через мобильный телефон или системы охранной сигнализации."
 
-msgid "Trunk Failures"
-msgstr "Отказ транка"
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:67
+msgid ""
+"Message or tone to be played if no trunks are available. Used on routes "
+"marked as intra-company only."
+msgstr ""
+"Сообщение или тональные сигналы, которые будут воспроизводиться при "
+"отстутствии доступных транков. Используются только на внутрикорпоративных "
+"маршрутах."
 
-msgid "No Answer"
-msgstr "Нет ответа"
-
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:104
 msgid ""
 "Message or tone to be played if there was no answer. Default message is:<br>"
 "\"The number is not answering.\"<br> Hangupcause is 18 or 19"
 msgstr ""
-"Сообщение или тональные сигналы, которые будут воспроизводиться при неответе. "
-"Стандартное сообщение:<br>\"Номер не отвечает\"<br> Код отбоя 18 или 19" 
+"Сообщение или тональные сигналы, которые будут воспроизводиться при "
+"неответе. Стандартное сообщение:<br>\"Номер не отвечает\"<br> Код отбоя 18 "
+"или 19"
 
-msgid "Number or Address Incomplete"
-msgstr "Номер или адрес неполный"
-
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:122
 msgid ""
 "Message or tone to be played if trunk reports Number or Address Incomplete. "
 "Usually this means that the number you have dialed is to short. Default "
 "message is:<br>\"The number you have dialed is not in service. Please check "
 "the number and try again.\"<br>Hangupcause is 28"
 msgstr ""
-"Сообщение или тональные сигналы, которые будут воспроизводиться при неполном"
-"номере или адресе. Обычно бывает, когда набранный номер слишком короткий. "
-"Стандартное сообщение:<br>\"Набранный номер не существует. Пожалуйста проверьте "
-"ещё раз и наберите снова.\"<br> Код отбоя 28" 
+"Сообщение или тональные сигналы, которые будут воспроизводиться при "
+"неполномномере или адресе. Обычно бывает, когда набранный номер слишком "
+"короткий. Стандартное сообщение:<br>\"Набранный номер не существует. "
+"Пожалуйста проверьте ещё раз и наберите снова.\"<br> Код отбоя 28"
 
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:102
+msgid "No Answer"
+msgstr "Нет ответа"
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:42
+msgid "No Routes Available"
+msgstr "Нет доступных маршрутов"
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:120
+msgid "Number or Address Incomplete"
+msgstr "Номер или адрес неполный"
+
+#: /usr/src/freepbx/outroutemsg/functions.inc.php:142
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:41
+msgid "Route Congestion Messages"
+msgstr "Сообщения о проблемах на маршруте"
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:47
+msgid "Standard Routes"
+msgstr "Стандартные маршруты"
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:139
 msgid "Submit Changes"
 msgstr "Применить изменения"
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:100
+msgid "Trunk Failures"
+msgstr "Отказ транка"
+
+#~ msgid "Settings"
+#~ msgstr "Установки"
+
+#~ msgid ""
+#~ "Configures message or congestion tones played when all trunks are busy in "
+#~ "a route. Allows different messages for Emergency Routes and Intra-Company "
+#~ "Routes"
+#~ msgstr ""
+#~ "Конфигурирует сообщения или тональные сигналы проблем когда все транки на "
+#~ "маршруте заняты. Допускаются разные сообщения для аварийных и "
+#~ "внутрикорпоративных маршрутов."

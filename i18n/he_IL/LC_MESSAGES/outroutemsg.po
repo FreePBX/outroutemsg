@@ -20,58 +20,55 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 18:02-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Route Congestion Messages"
-msgstr ""
-
+#: /usr/src/freepbx/outroutemsg/install.php:17
 msgid "Can not create outroutemsg table"
 msgstr ""
 
-msgid "Settings"
-msgstr ""
-
-msgid ""
-"Configures message or congestion tones played when all trunks are busy in a "
-"route. Allows different messages for Emergency Routes and Intra-Company "
-"Routes"
-msgstr ""
-
-msgid "No Routes Available"
-msgstr ""
-
-msgid "Standard Routes"
-msgstr ""
-
-msgid "Message or Tone"
-msgstr ""
-
-msgid "Message or tone to be played if no trunks are available."
-msgstr ""
-
-msgid "Default Message"
-msgstr ""
-
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:54
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:72
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:90
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:109
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:127
 msgid "Congestion Tones"
 msgstr ""
 
-msgid "Intra-Company Routes"
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:53
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:71
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:89
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:108
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:126
+msgid "Default Message"
 msgstr ""
 
-msgid ""
-"Message or tone to be played if no trunks are available. Used on routes "
-"marked as intra-company only."
-msgstr ""
-
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:83
 msgid "Emergency Routes"
 msgstr ""
 
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:65
+msgid "Intra-Company Routes"
+msgstr ""
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:49
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:67
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:85
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:104
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:122
+msgid "Message or Tone"
+msgstr ""
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:49
+msgid "Message or tone to be played if no trunks are available."
+msgstr ""
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:85
 msgid ""
 "Message or tone to be played if no trunks are available. Used on all "
 "emergency routes. Consider a message instructing callers to find an "
@@ -79,20 +76,19 @@ msgid ""
 "alarm system panel."
 msgstr ""
 
-msgid "Trunk Failures"
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:67
+msgid ""
+"Message or tone to be played if no trunks are available. Used on routes "
+"marked as intra-company only."
 msgstr ""
 
-msgid "No Answer"
-msgstr ""
-
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:104
 msgid ""
 "Message or tone to be played if there was no answer. Default message is:<br>"
 "\"The number is not answering.\"<br> Hangupcause is 18 or 19"
 msgstr ""
 
-msgid "Number or Address Incomplete"
-msgstr ""
-
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:122
 msgid ""
 "Message or tone to be played if trunk reports Number or Address Incomplete. "
 "Usually this means that the number you have dialed is to short. Default "
@@ -100,5 +96,31 @@ msgid ""
 "the number and try again.\"<br>Hangupcause is 28"
 msgstr ""
 
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:102
+msgid "No Answer"
+msgstr ""
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:42
+msgid "No Routes Available"
+msgstr ""
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:120
+msgid "Number or Address Incomplete"
+msgstr ""
+
+#: /usr/src/freepbx/outroutemsg/functions.inc.php:142
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:41
+msgid "Route Congestion Messages"
+msgstr ""
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:47
+msgid "Standard Routes"
+msgstr ""
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:139
 msgid "Submit Changes"
+msgstr ""
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:100
+msgid "Trunk Failures"
 msgstr ""

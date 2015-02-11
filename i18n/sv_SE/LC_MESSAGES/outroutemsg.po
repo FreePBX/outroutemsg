@@ -20,62 +20,57 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX outroutemsg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-09-23 09:52+0000\n"
+"POT-Creation-Date: 2015-02-11 18:02-0500\n"
 "PO-Revision-Date: 2010-01-17 18:45+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: SWEDISH\n"
 "X-Poedit-Country: Sweden\n"
 
-msgid "Route Congestion Messages"
-msgstr "Överbelastningsmeddelanden"
-
+#: /usr/src/freepbx/outroutemsg/install.php:17
 msgid "Can not create outroutemsg table"
 msgstr "Kan inte skapa tabellen outroutemsg"
 
-msgid "Settings"
-msgstr ""
-
-msgid ""
-"Configures message or congestion tones played when all trunks are busy in a "
-"route. Allows different messages for Emergency Routes and Intra-Company "
-"Routes"
-msgstr ""
-
-msgid "No Routes Available"
-msgstr "Inga vägar tillgängliga"
-
-msgid "Standard Routes"
-msgstr "Standardväg"
-
-msgid "Message or Tone"
-msgstr "Meddelande eller ton"
-
-msgid "Message or tone to be played if no trunks are available."
-msgstr "Meddelande eller ton att spela upp om inga trunkar är tillgängliga."
-
-msgid "Default Message"
-msgstr "Standardmeddelande"
-
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:54
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:72
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:90
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:109
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:127
 msgid "Congestion Tones"
 msgstr "Överbelastningstoner"
 
-msgid "Intra-Company Routes"
-msgstr "Vägar inom företaget"
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:53
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:71
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:89
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:108
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:126
+msgid "Default Message"
+msgstr "Standardmeddelande"
 
-msgid ""
-"Message or tone to be played if no trunks are available. Used on routes "
-"marked as intra-company only."
-msgstr ""
-"Meddelande eller ton att spela upp om inga trunkar är tillgängliga. Används "
-"endast på vägar markerade som intra-företag."
-
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:83
 msgid "Emergency Routes"
 msgstr "Nödvägar"
 
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:65
+msgid "Intra-Company Routes"
+msgstr "Vägar inom företaget"
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:49
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:67
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:85
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:104
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:122
+msgid "Message or Tone"
+msgstr "Meddelande eller ton"
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:49
+msgid "Message or tone to be played if no trunks are available."
+msgstr "Meddelande eller ton att spela upp om inga trunkar är tillgängliga."
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:85
 msgid ""
 "Message or tone to be played if no trunks are available. Used on all "
 "emergency routes. Consider a message instructing callers to find an "
@@ -86,12 +81,15 @@ msgstr ""
 "på alla nödvägar. Tala gärna in ett meddelande som instruerar uppringaren "
 "hur man hittar alternativ för nödsamtal såsom mobiltelefon eller larmpanel."
 
-msgid "Trunk Failures"
-msgstr "Trunkfel"
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:67
+msgid ""
+"Message or tone to be played if no trunks are available. Used on routes "
+"marked as intra-company only."
+msgstr ""
+"Meddelande eller ton att spela upp om inga trunkar är tillgängliga. Används "
+"endast på vägar markerade som intra-företag."
 
-msgid "No Answer"
-msgstr "Inget svar"
-
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:104
 msgid ""
 "Message or tone to be played if there was no answer. Default message is:<br>"
 "\"The number is not answering.\"<br> Hangupcause is 18 or 19"
@@ -99,9 +97,7 @@ msgstr ""
 "Meddelande eller ton att spela upp vid inget svar. Standardmeddelande är:<br>"
 "\"Numret svarar ej.\"<br>Avslutningskod är 18 eller 19"
 
-msgid "Number or Address Incomplete"
-msgstr "Nummer eller adress är ofullständigt"
-
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:122
 msgid ""
 "Message or tone to be played if trunk reports Number or Address Incomplete. "
 "Usually this means that the number you have dialed is to short. Default "
@@ -113,8 +109,34 @@ msgstr ""
 "för kortStandardmeddelande är:<br>\"Numret du har ring är inte i bruk. "
 "Kontrollera numret och försök igen.\"<br> Avslutningskod är 28"
 
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:102
+msgid "No Answer"
+msgstr "Inget svar"
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:42
+msgid "No Routes Available"
+msgstr "Inga vägar tillgängliga"
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:120
+msgid "Number or Address Incomplete"
+msgstr "Nummer eller adress är ofullständigt"
+
+#: /usr/src/freepbx/outroutemsg/functions.inc.php:142
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:41
+msgid "Route Congestion Messages"
+msgstr "Överbelastningsmeddelanden"
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:47
+msgid "Standard Routes"
+msgstr "Standardväg"
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:139
 msgid "Submit Changes"
 msgstr "Spara ändringar"
+
+#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:100
+msgid "Trunk Failures"
+msgstr "Trunkfel"
 
 #~ msgid "Unallocated Number"
 #~ msgstr "Numret finns inte"
