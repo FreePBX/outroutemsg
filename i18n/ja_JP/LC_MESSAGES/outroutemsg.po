@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-11 18:02-0500\n"
+"POT-Creation-Date: 2015-02-20 19:43-0500\n"
 "PO-Revision-Date: 2014-02-19 20:56+0200\n"
 "Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/outroutemsg/ja/"
@@ -49,47 +49,47 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 1.8\n"
 
-#: /usr/src/freepbx/outroutemsg/install.php:17
+#: install.php:17
 msgid "Can not create outroutemsg table"
 msgstr "outroutemsgテーブルの作成ができません"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:54
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:72
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:90
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:109
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:127
+#: outroutemsg.i18n.php:5
+msgid ""
+"Configures message or congestion tones played when all trunks are busy in a "
+"route. Allows different messages for Emergency Routes and Intra-Company "
+"Routes"
+msgstr ""
+"ルート内の全てのトランクがビジー状態のときに再生されるメッセージ又は輻輳トー"
+"ンを設定します。緊急ルートや社内ルートに対して異なるメッセージを許可します。"
+
+#: page.outroutemsg.php:54 page.outroutemsg.php:72 page.outroutemsg.php:90
+#: page.outroutemsg.php:109 page.outroutemsg.php:127
 msgid "Congestion Tones"
 msgstr "輻輳トーン"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:53
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:71
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:89
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:108
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:126
+#: page.outroutemsg.php:53 page.outroutemsg.php:71 page.outroutemsg.php:89
+#: page.outroutemsg.php:108 page.outroutemsg.php:126
 msgid "Default Message"
 msgstr "デフォルトメッセージ"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:83
+#: page.outroutemsg.php:83
 msgid "Emergency Routes"
 msgstr "緊急ルート"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:65
+#: page.outroutemsg.php:65
 msgid "Intra-Company Routes"
 msgstr "社内ルート"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:49
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:67
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:85
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:104
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:122
+#: page.outroutemsg.php:49 page.outroutemsg.php:67 page.outroutemsg.php:85
+#: page.outroutemsg.php:104 page.outroutemsg.php:122
 msgid "Message or Tone"
 msgstr "メッセージ or トーン"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:49
+#: page.outroutemsg.php:49
 msgid "Message or tone to be played if no trunks are available."
 msgstr "利用可能なトランクがない場合に再生されるメッセージ又はトーン。"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:85
+#: page.outroutemsg.php:85
 msgid ""
 "Message or tone to be played if no trunks are available. Used on all "
 "emergency routes. Consider a message instructing callers to find an "
@@ -101,7 +101,7 @@ msgstr ""
 "サービスを呼び出す手段を見つけるように、発信者に対して指示するメッセージを検"
 "討してください。"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:67
+#: page.outroutemsg.php:67
 msgid ""
 "Message or tone to be played if no trunks are available. Used on routes "
 "marked as intra-company only."
@@ -109,7 +109,7 @@ msgstr ""
 "利用可能なトランクがない場合に再生されるメッセージ又はトーン。ルートが、社内"
 "ルートとしてマークされてる時のみ使用。"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:104
+#: page.outroutemsg.php:104
 msgid ""
 "Message or tone to be played if there was no answer. Default message is:<br>"
 "\"The number is not answering.\"<br> Hangupcause is 18 or 19"
@@ -118,7 +118,7 @@ msgstr ""
 "<br>\"The number is not answering.\"<br>ハングアップ理由は 18 又は 19　となり"
 "ます。"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:122
+#: page.outroutemsg.php:122
 msgid ""
 "Message or tone to be played if trunk reports Number or Address Incomplete. "
 "Usually this means that the number you have dialed is to short. Default "
@@ -130,43 +130,35 @@ msgstr ""
 "メッセージ：<br>\"The number you have dialed is not in service. Please check "
 "the number and try again.\"<br>ハングアップ理由は 28　となります。"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:102
+#: page.outroutemsg.php:102
 msgid "No Answer"
 msgstr "応答なし"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:42
+#: page.outroutemsg.php:42
 msgid "No Routes Available"
 msgstr "利用可能なルートがありません"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:120
+#: page.outroutemsg.php:120
 msgid "Number or Address Incomplete"
 msgstr "不完全な番号 又は アドレス"
 
-#: /usr/src/freepbx/outroutemsg/functions.inc.php:142
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:41
+#: functions.inc.php:142 outroutemsg.i18n.php:3 outroutemsg.i18n.php:6
+#: page.outroutemsg.php:41
 msgid "Route Congestion Messages"
 msgstr "ルートの輻輳メッセージ"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:47
+#: outroutemsg.i18n.php:4
+msgid "Settings"
+msgstr "設定"
+
+#: page.outroutemsg.php:47
 msgid "Standard Routes"
 msgstr "標準ルート"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:139
+#: page.outroutemsg.php:139
 msgid "Submit Changes"
 msgstr "変更を適用"
 
-#: /usr/src/freepbx/outroutemsg/page.outroutemsg.php:100
+#: page.outroutemsg.php:100
 msgid "Trunk Failures"
 msgstr "トランクの障害"
-
-#~ msgid "Settings"
-#~ msgstr "設定"
-
-#~ msgid ""
-#~ "Configures message or congestion tones played when all trunks are busy in "
-#~ "a route. Allows different messages for Emergency Routes and Intra-Company "
-#~ "Routes"
-#~ msgstr ""
-#~ "ルート内の全てのトランクがビジー状態のときに再生されるメッセージ又は輻輳"
-#~ "トーンを設定します。緊急ルートや社内ルートに対して異なるメッセージを許可し"
-#~ "ます。"
