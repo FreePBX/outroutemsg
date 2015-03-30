@@ -60,7 +60,7 @@ msgstr "Mensaje o Tono"
 
 #: page.outroutemsg.php:49
 msgid "Message or tone to be played if no trunks are available."
-msgstr "Mensaje o tono que será reproducido si NO hay líneas disponibles"
+msgstr "Mensaje o tono que será reproducido si NO hay líneas disponibles."
 
 #: page.outroutemsg.php:85
 msgid ""
