@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX outroutemsg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:43-0500\n"
+"POT-Creation-Date: 2015-05-26 11:17-0400\n"
 "PO-Revision-Date: 2010-01-17 18:45+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -34,41 +34,29 @@ msgstr ""
 msgid "Can not create outroutemsg table"
 msgstr "Kan inte skapa tabellen outroutemsg"
 
-#: outroutemsg.i18n.php:5
-msgid ""
-"Configures message or congestion tones played when all trunks are busy in a "
-"route. Allows different messages for Emergency Routes and Intra-Company "
-"Routes"
-msgstr ""
-
-#: page.outroutemsg.php:54 page.outroutemsg.php:72 page.outroutemsg.php:90
-#: page.outroutemsg.php:109 page.outroutemsg.php:127
+#: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
+#: page.outroutemsg.php:182 page.outroutemsg.php:216
 msgid "Congestion Tones"
 msgstr "Överbelastningstoner"
 
-#: page.outroutemsg.php:53 page.outroutemsg.php:71 page.outroutemsg.php:89
-#: page.outroutemsg.php:108 page.outroutemsg.php:126
+#: page.outroutemsg.php:77 page.outroutemsg.php:111 page.outroutemsg.php:145
+#: page.outroutemsg.php:181 page.outroutemsg.php:215
 msgid "Default Message"
 msgstr "Standardmeddelande"
 
-#: page.outroutemsg.php:83
+#: page.outroutemsg.php:139
 msgid "Emergency Routes"
 msgstr "Nödvägar"
 
-#: page.outroutemsg.php:65
+#: page.outroutemsg.php:105
 msgid "Intra-Company Routes"
 msgstr "Vägar inom företaget"
 
-#: page.outroutemsg.php:49 page.outroutemsg.php:67 page.outroutemsg.php:85
-#: page.outroutemsg.php:104 page.outroutemsg.php:122
-msgid "Message or Tone"
-msgstr "Meddelande eller ton"
-
-#: page.outroutemsg.php:49
+#: page.outroutemsg.php:93
 msgid "Message or tone to be played if no trunks are available."
 msgstr "Meddelande eller ton att spela upp om inga trunkar är tillgängliga."
 
-#: page.outroutemsg.php:85
+#: page.outroutemsg.php:161
 msgid ""
 "Message or tone to be played if no trunks are available. Used on all "
 "emergency routes. Consider a message instructing callers to find an "
@@ -79,7 +67,7 @@ msgstr ""
 "på alla nödvägar. Tala gärna in ett meddelande som instruerar uppringaren "
 "hur man hittar alternativ för nödsamtal såsom mobiltelefon eller larmpanel."
 
-#: page.outroutemsg.php:67
+#: page.outroutemsg.php:127
 msgid ""
 "Message or tone to be played if no trunks are available. Used on routes "
 "marked as intra-company only."
@@ -87,7 +75,7 @@ msgstr ""
 "Meddelande eller ton att spela upp om inga trunkar är tillgängliga. Används "
 "endast på vägar markerade som intra-företag."
 
-#: page.outroutemsg.php:104
+#: page.outroutemsg.php:197
 msgid ""
 "Message or tone to be played if there was no answer. Default message is:<br>"
 "\"The number is not answering.\"<br> Hangupcause is 18 or 19"
@@ -95,7 +83,7 @@ msgstr ""
 "Meddelande eller ton att spela upp vid inget svar. Standardmeddelande är:<br>"
 "\"Numret svarar ej.\"<br>Avslutningskod är 18 eller 19"
 
-#: page.outroutemsg.php:122
+#: page.outroutemsg.php:231
 msgid ""
 "Message or tone to be played if trunk reports Number or Address Incomplete. "
 "Usually this means that the number you have dialed is to short. Default "
@@ -107,38 +95,43 @@ msgstr ""
 "för kortStandardmeddelande är:<br>\"Numret du har ring är inte i bruk. "
 "Kontrollera numret och försök igen.\"<br> Avslutningskod är 28"
 
-#: page.outroutemsg.php:102
+#: page.outroutemsg.php:175
 msgid "No Answer"
 msgstr "Inget svar"
 
-#: page.outroutemsg.php:42
+#: page.outroutemsg.php:53
 msgid "No Routes Available"
 msgstr "Inga vägar tillgängliga"
 
-#: page.outroutemsg.php:120
+#: page.outroutemsg.php:209
 msgid "Number or Address Incomplete"
 msgstr "Nummer eller adress är ofullständigt"
 
-#: functions.inc.php:142 outroutemsg.i18n.php:3 outroutemsg.i18n.php:6
-#: page.outroutemsg.php:41
+#: Outroutemsg.class.php:30
+msgid "Reset"
+msgstr ""
+
+#: functions.inc.php:142 page.outroutemsg.php:42
 msgid "Route Congestion Messages"
 msgstr "Överbelastningsmeddelanden"
 
-#: outroutemsg.i18n.php:4
-msgid "Settings"
-msgstr ""
-
-#: page.outroutemsg.php:47
+#: page.outroutemsg.php:71
 msgid "Standard Routes"
 msgstr "Standardväg"
 
-#: page.outroutemsg.php:139
-msgid "Submit Changes"
-msgstr "Spara ändringar"
+#: Outroutemsg.class.php:35
+msgid "Submit"
+msgstr ""
 
-#: page.outroutemsg.php:100
+#: page.outroutemsg.php:58
 msgid "Trunk Failures"
 msgstr "Trunkfel"
+
+#~ msgid "Message or Tone"
+#~ msgstr "Meddelande eller ton"
+
+#~ msgid "Submit Changes"
+#~ msgstr "Spara ändringar"
 
 #~ msgid "Unallocated Number"
 #~ msgstr "Numret finns inte"

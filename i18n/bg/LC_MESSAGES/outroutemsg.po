@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-20 19:43-0500\n"
+"POT-Creation-Date: 2015-05-26 11:17-0400\n"
 "PO-Revision-Date: 2014-07-22 16:02+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -36,45 +36,30 @@ msgstr ""
 msgid "Can not create outroutemsg table"
 msgstr "Не мога да създам таблица outroutemsg"
 
-#: outroutemsg.i18n.php:5
-msgid ""
-"Configures message or congestion tones played when all trunks are busy in a "
-"route. Allows different messages for Emergency Routes and Intra-Company "
-"Routes"
-msgstr ""
-"Конфигуриране на съобщение или тон за претоварване, които да се "
-"възпроизвеждат когато всички линии в маршрута са заети. Позволява избирането "
-"на различни съобщения за Маршрути за Спешни Случаи и Между Фирмени Маршрути"
-
-#: page.outroutemsg.php:54 page.outroutemsg.php:72 page.outroutemsg.php:90
-#: page.outroutemsg.php:109 page.outroutemsg.php:127
+#: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
+#: page.outroutemsg.php:182 page.outroutemsg.php:216
 msgid "Congestion Tones"
 msgstr "Тонове за Претоварване"
 
-#: page.outroutemsg.php:53 page.outroutemsg.php:71 page.outroutemsg.php:89
-#: page.outroutemsg.php:108 page.outroutemsg.php:126
+#: page.outroutemsg.php:77 page.outroutemsg.php:111 page.outroutemsg.php:145
+#: page.outroutemsg.php:181 page.outroutemsg.php:215
 msgid "Default Message"
 msgstr "Съобщение По-Подразбиране"
 
-#: page.outroutemsg.php:83
+#: page.outroutemsg.php:139
 msgid "Emergency Routes"
 msgstr "Маршрут за Спешни Случаи"
 
-#: page.outroutemsg.php:65
+#: page.outroutemsg.php:105
 msgid "Intra-Company Routes"
 msgstr "Между Фирмен Маршрут"
 
-#: page.outroutemsg.php:49 page.outroutemsg.php:67 page.outroutemsg.php:85
-#: page.outroutemsg.php:104 page.outroutemsg.php:122
-msgid "Message or Tone"
-msgstr "Съобщение или Тон"
-
-#: page.outroutemsg.php:49
+#: page.outroutemsg.php:93
 msgid "Message or tone to be played if no trunks are available."
 msgstr ""
 "Съобщение или тон които да се възпроизведат ако няма свободни външни линии."
 
-#: page.outroutemsg.php:85
+#: page.outroutemsg.php:161
 msgid ""
 "Message or tone to be played if no trunks are available. Used on all "
 "emergency routes. Consider a message instructing callers to find an "
@@ -87,7 +72,7 @@ msgstr ""
 "начин да се свържат със спешни случаи като мобилен телефон или системен "
 "панел на аларма."
 
-#: page.outroutemsg.php:67
+#: page.outroutemsg.php:127
 msgid ""
 "Message or tone to be played if no trunks are available. Used on routes "
 "marked as intra-company only."
@@ -95,7 +80,7 @@ msgstr ""
 "Съобщение или тон които да се възпроизведат ако няма свободни външни линии. "
 "Ще се използва само за маршрути маркирани като между фирмени."
 
-#: page.outroutemsg.php:104
+#: page.outroutemsg.php:197
 msgid ""
 "Message or tone to be played if there was no answer. Default message is:<br>"
 "\"The number is not answering.\"<br> Hangupcause is 18 or 19"
@@ -104,7 +89,7 @@ msgstr ""
 "подразбиране е:<br>\\\"The number is not answering.\\\"<br> Hangupcause е 18 "
 "или 19"
 
-#: page.outroutemsg.php:122
+#: page.outroutemsg.php:231
 msgid ""
 "Message or tone to be played if trunk reports Number or Address Incomplete. "
 "Usually this means that the number you have dialed is to short. Default "
@@ -117,35 +102,53 @@ msgstr ""
 "dialed is not in service. Please check the number and try again.\\"
 "\"<br>Hangupcause е 28"
 
-#: page.outroutemsg.php:102
+#: page.outroutemsg.php:175
 msgid "No Answer"
 msgstr "Без Отговор"
 
-#: page.outroutemsg.php:42
+#: page.outroutemsg.php:53
 msgid "No Routes Available"
 msgstr "Няма Достъпни Маршрути"
 
-#: page.outroutemsg.php:120
+#: page.outroutemsg.php:209
 msgid "Number or Address Incomplete"
 msgstr "Непълен Номер или Адрес"
 
-#: functions.inc.php:142 outroutemsg.i18n.php:3 outroutemsg.i18n.php:6
-#: page.outroutemsg.php:41
+#: Outroutemsg.class.php:30
+msgid "Reset"
+msgstr ""
+
+#: functions.inc.php:142 page.outroutemsg.php:42
 msgid "Route Congestion Messages"
 msgstr "Претоварване на Маршрут"
 
-#: outroutemsg.i18n.php:4
-msgid "Settings"
-msgstr "Настройки"
-
-#: page.outroutemsg.php:47
+#: page.outroutemsg.php:71
 msgid "Standard Routes"
 msgstr "Стандартни Маршрути"
 
-#: page.outroutemsg.php:139
-msgid "Submit Changes"
-msgstr "Приеми Промените"
+#: Outroutemsg.class.php:35
+msgid "Submit"
+msgstr ""
 
-#: page.outroutemsg.php:100
+#: page.outroutemsg.php:58
 msgid "Trunk Failures"
 msgstr "Отпадания на Външна Линия"
+
+#~ msgid ""
+#~ "Configures message or congestion tones played when all trunks are busy in "
+#~ "a route. Allows different messages for Emergency Routes and Intra-Company "
+#~ "Routes"
+#~ msgstr ""
+#~ "Конфигуриране на съобщение или тон за претоварване, които да се "
+#~ "възпроизвеждат когато всички линии в маршрута са заети. Позволява "
+#~ "избирането на различни съобщения за Маршрути за Спешни Случаи и Между "
+#~ "Фирмени Маршрути"
+
+#~ msgid "Message or Tone"
+#~ msgstr "Съобщение или Тон"
+
+#~ msgid "Settings"
+#~ msgstr "Настройки"
+
+#~ msgid "Submit Changes"
+#~ msgstr "Приеми Промените"
