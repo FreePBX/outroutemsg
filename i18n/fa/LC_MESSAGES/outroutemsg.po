@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-05-26 11:17-0400\n"
-"PO-Revision-Date: 2016-02-15 05:18+0200\n"
+"PO-Revision-Date: 2016-03-16 23:44+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian "
 "<http://weblate.freepbx.org/projects/freepbx/outroutemsg/fa/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.2-dev\n"
+"X-Generator: Weblate 2.4\n"
 
 #: install.php:17
 msgid "Can not create outroutemsg table"
@@ -53,19 +53,21 @@ msgid ""
 "emergency routes. Consider a message instructing callers to find an "
 "alternative means of calling emergency services such as a cell phone or "
 "alarm system panel."
-msgstr ""
+msgstr "پیامی که در صورت وجود داشتن ترانک پخش میشود."
 
 #: page.outroutemsg.php:127
 msgid ""
 "Message or tone to be played if no trunks are available. Used on routes "
 "marked as intra-company only."
-msgstr ""
+msgstr "پیامی که در صورت وجود نداشتن ترانک پخش میشود."
 
 #: page.outroutemsg.php:197
 msgid ""
 "Message or tone to be played if there was no answer. Default message is:<br>"
 "\"The number is not answering.\"<br> Hangupcause is 18 or 19"
 msgstr ""
+"پیامی که در صورت پاسخ ندادن پخش میشود.  پیام پیشفرض ：<br>\"داخلی پاسخگو نیست."
+"\" <br> قطع ۱۸ یا ۱۹"
 
 #: page.outroutemsg.php:231
 msgid ""
@@ -74,6 +76,9 @@ msgid ""
 "message is:<br>\"The number you have dialed is not in service. Please check "
 "the number and try again.\"<br>Hangupcause is 28"
 msgstr ""
+"پیامی که در صورتی پخش میشود که ترانک شماره یا آدرس ناقصی گزارش کند.Default "
+"message is:<br>\"The number you have dialed is not in service. Please check "
+"the number and try again.\"<br>Hangupcause is 28"
 
 #: page.outroutemsg.php:175
 msgid "No Answer"
