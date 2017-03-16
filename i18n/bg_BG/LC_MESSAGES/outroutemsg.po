@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-26 11:17-0400\n"
+"POT-Creation-Date: 2017-03-16 13:47-0700\n"
 "PO-Revision-Date: 2014-07-22 16:02+0200\n"
 "Last-Translator: Chavdar <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://git.freepbx.org/projects/freepbx/"
@@ -35,6 +35,16 @@ msgstr ""
 #: install.php:17
 msgid "Can not create outroutemsg table"
 msgstr "Не мога да създам таблица outroutemsg"
+
+#: outroutemsg.i18n.php:8
+msgid ""
+"Configures message or congestion tones played when all trunks are busy in a "
+"route. Allows different messages for Emergency Routes and Intra-Company "
+"Routes"
+msgstr ""
+"Конфигуриране на съобщение или тон за претоварване, които да се "
+"възпроизвеждат когато всички линии в маршрута са заети. Позволява избирането "
+"на различни съобщения за Маршрути за Спешни Случаи и Между Фирмени Маршрути"
 
 #: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
 #: page.outroutemsg.php:182 page.outroutemsg.php:216
@@ -118,9 +128,14 @@ msgstr "Непълен Номер или Адрес"
 msgid "Reset"
 msgstr ""
 
-#: functions.inc.php:142 page.outroutemsg.php:42
+#: functions.inc.php:142 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
+#: page.outroutemsg.php:42
 msgid "Route Congestion Messages"
 msgstr "Претоварване на Маршрут"
+
+#: outroutemsg.i18n.php:6
+msgid "Settings"
+msgstr "Настройки"
 
 #: page.outroutemsg.php:71
 msgid "Standard Routes"
@@ -134,21 +149,8 @@ msgstr ""
 msgid "Trunk Failures"
 msgstr "Отпадания на Външна Линия"
 
-#~ msgid ""
-#~ "Configures message or congestion tones played when all trunks are busy in "
-#~ "a route. Allows different messages for Emergency Routes and Intra-Company "
-#~ "Routes"
-#~ msgstr ""
-#~ "Конфигуриране на съобщение или тон за претоварване, които да се "
-#~ "възпроизвеждат когато всички линии в маршрута са заети. Позволява "
-#~ "избирането на различни съобщения за Маршрути за Спешни Случаи и Между "
-#~ "Фирмени Маршрути"
-
 #~ msgid "Message or Tone"
 #~ msgstr "Съобщение или Тон"
-
-#~ msgid "Settings"
-#~ msgstr "Настройки"
 
 #~ msgid "Submit Changes"
 #~ msgstr "Приеми Промените"

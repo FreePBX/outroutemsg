@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-26 11:17-0400\n"
+"POT-Creation-Date: 2017-03-16 13:47-0700\n"
 "PO-Revision-Date: 2015-02-20 19:43-0500\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -21,6 +21,13 @@ msgstr ""
 #: install.php:17
 msgid "Can not create outroutemsg table"
 msgstr "不能创建拥塞表"
+
+#: outroutemsg.i18n.php:8
+msgid ""
+"Configures message or congestion tones played when all trunks are busy in a "
+"route. Allows different messages for Emergency Routes and Intra-Company "
+"Routes"
+msgstr ""
 
 #: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
 #: page.outroutemsg.php:182 page.outroutemsg.php:216
@@ -88,9 +95,14 @@ msgstr "号码或者地址不完整"
 msgid "Reset"
 msgstr ""
 
-#: functions.inc.php:142 page.outroutemsg.php:42
+#: functions.inc.php:142 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
+#: page.outroutemsg.php:42
 msgid "Route Congestion Messages"
 msgstr "路由拥塞信息"
+
+#: outroutemsg.i18n.php:6
+msgid "Settings"
+msgstr "设置"
 
 #: page.outroutemsg.php:71
 msgid "Standard Routes"
@@ -106,9 +118,6 @@ msgstr "中继失败"
 
 #~ msgid "Message or Tone"
 #~ msgstr "信息或语音"
-
-#~ msgid "Settings"
-#~ msgstr "设置"
 
 #~ msgid "Submit Changes"
 #~ msgstr "提交修改"

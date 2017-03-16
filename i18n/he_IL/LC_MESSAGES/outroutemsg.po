@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-26 11:17-0400\n"
+"POT-Creation-Date: 2017-03-16 13:47-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,13 @@ msgstr ""
 
 #: install.php:17
 msgid "Can not create outroutemsg table"
+msgstr ""
+
+#: outroutemsg.i18n.php:8
+msgid ""
+"Configures message or congestion tones played when all trunks are busy in a "
+"route. Allows different messages for Emergency Routes and Intra-Company "
+"Routes"
 msgstr ""
 
 #: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
@@ -98,8 +105,13 @@ msgstr ""
 msgid "Reset"
 msgstr ""
 
-#: functions.inc.php:142 page.outroutemsg.php:42
+#: functions.inc.php:142 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
+#: page.outroutemsg.php:42
 msgid "Route Congestion Messages"
+msgstr ""
+
+#: outroutemsg.i18n.php:6
+msgid "Settings"
 msgstr ""
 
 #: page.outroutemsg.php:71

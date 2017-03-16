@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX outroutemsg\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-26 11:17-0400\n"
+"POT-Creation-Date: 2017-03-16 13:47-0700\n"
 "PO-Revision-Date: 2010-01-17 18:45+0100\n"
 "Last-Translator: Mikael Carlsson <mickecamino@gmail.com>\n"
 "Language-Team: \n"
@@ -33,6 +33,13 @@ msgstr ""
 #: install.php:17
 msgid "Can not create outroutemsg table"
 msgstr "Kan inte skapa tabellen outroutemsg"
+
+#: outroutemsg.i18n.php:8
+msgid ""
+"Configures message or congestion tones played when all trunks are busy in a "
+"route. Allows different messages for Emergency Routes and Intra-Company "
+"Routes"
+msgstr ""
 
 #: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
 #: page.outroutemsg.php:182 page.outroutemsg.php:216
@@ -111,9 +118,14 @@ msgstr "Nummer eller adress är ofullständigt"
 msgid "Reset"
 msgstr ""
 
-#: functions.inc.php:142 page.outroutemsg.php:42
+#: functions.inc.php:142 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
+#: page.outroutemsg.php:42
 msgid "Route Congestion Messages"
 msgstr "Överbelastningsmeddelanden"
+
+#: outroutemsg.i18n.php:6
+msgid "Settings"
+msgstr ""
 
 #: page.outroutemsg.php:71
 msgid "Standard Routes"

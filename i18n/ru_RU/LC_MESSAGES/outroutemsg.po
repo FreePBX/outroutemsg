@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-26 11:17-0400\n"
+"POT-Creation-Date: 2017-03-16 13:47-0700\n"
 "PO-Revision-Date: 2015-04-25 00:19+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -22,6 +22,16 @@ msgstr ""
 #: install.php:17
 msgid "Can not create outroutemsg table"
 msgstr "Невозможно создать таблицу outroutemsg"
+
+#: outroutemsg.i18n.php:8
+msgid ""
+"Configures message or congestion tones played when all trunks are busy in a "
+"route. Allows different messages for Emergency Routes and Intra-Company "
+"Routes"
+msgstr ""
+"Конфигурирует сообщения или тональные сигналы проблем когда все транки на "
+"маршруте заняты. Допускаются разные сообщения для аварийных и "
+"внутрикорпоративных маршрутов"
 
 #: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
 #: page.outroutemsg.php:182 page.outroutemsg.php:216
@@ -105,9 +115,14 @@ msgstr "Номер или адрес неполный"
 msgid "Reset"
 msgstr ""
 
-#: functions.inc.php:142 page.outroutemsg.php:42
+#: functions.inc.php:142 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
+#: page.outroutemsg.php:42
 msgid "Route Congestion Messages"
 msgstr "Сообщения о проблемах на маршруте"
+
+#: outroutemsg.i18n.php:6
+msgid "Settings"
+msgstr "Установки"
 
 #: page.outroutemsg.php:71
 msgid "Standard Routes"
@@ -121,20 +136,8 @@ msgstr ""
 msgid "Trunk Failures"
 msgstr "Отказ транка"
 
-#~ msgid ""
-#~ "Configures message or congestion tones played when all trunks are busy in "
-#~ "a route. Allows different messages for Emergency Routes and Intra-Company "
-#~ "Routes"
-#~ msgstr ""
-#~ "Конфигурирует сообщения или тональные сигналы проблем когда все транки на "
-#~ "маршруте заняты. Допускаются разные сообщения для аварийных и "
-#~ "внутрикорпоративных маршрутов"
-
 #~ msgid "Message or Tone"
 #~ msgstr "Сообщение или тональный сигнал"
-
-#~ msgid "Settings"
-#~ msgstr "Установки"
 
 #~ msgid "Submit Changes"
 #~ msgstr "Применить изменения"
