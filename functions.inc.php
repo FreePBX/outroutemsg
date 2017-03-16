@@ -35,14 +35,14 @@ function outroutemsg_get_config($engine) {
 
 		switch ($outroutemsg_ids['default_msg_id']) {
 			case DEFAULT_MSG:
-				$ext->add($contextname, $exten, '', new ext_playback("all-circuits-busy-now&pls-try-call-later, noanswer"));
+				$ext->add($contextname, $exten, '', new ext_playback("all-circuits-busy-now&please-try-call-later, noanswer"));
 				break;
 			case CONGESTION_TONE:
 				$ext->add($contextname, $exten, '', new ext_playtones("congestion"));
 				break;
 			default:
 				$message = recordings_get_file($outroutemsg_ids['default_msg_id']);
-				$message = ($message != "") ? $message : "all-circuits-busy-now&pls-try-call-later";
+				$message = ($message != "") ? $message : "all-circuits-busy-now&please-try-call-later";
 				$ext->add($contextname, $exten, '', new ext_playback("$message, noanswer"));
 		}
 		$ext->add($contextname, $exten, '', new ext_congestion());
@@ -51,14 +51,14 @@ function outroutemsg_get_config($engine) {
 		$exten = 'intracompany';
 		switch ($outroutemsg_ids['intracompany_msg_id']) {
 			case DEFAULT_MSG:
-				$ext->add($contextname, $exten, '', new ext_playback("all-circuits-busy-now&pls-try-call-later, noanswer"));
+				$ext->add($contextname, $exten, '', new ext_playback("all-circuits-busy-now&please-try-call-later, noanswer"));
 				break;
 			case CONGESTION_TONE:
 				$ext->add($contextname, $exten, '', new ext_playtones("congestion"));
 				break;
 			default:
 				$message = recordings_get_file($outroutemsg_ids['intracompany_msg_id']);
-				$message = ($message != "") ? $message : "all-circuits-busy-now&pls-try-call-later";
+				$message = ($message != "") ? $message : "all-circuits-busy-now&please-try-call-later";
 				$ext->add($contextname, $exten, '', new ext_playback("$message, noanswer"));
 		}
 		$ext->add($contextname, $exten, '', new ext_congestion());
@@ -67,14 +67,14 @@ function outroutemsg_get_config($engine) {
 		$exten = 'emergency';
 		switch ($outroutemsg_ids['emergency_msg_id']) {
 			case DEFAULT_MSG:
-				$ext->add($contextname, $exten, '', new ext_playback("all-circuits-busy-now&pls-try-call-later"));
+				$ext->add($contextname, $exten, '', new ext_playback("all-circuits-busy-now&please-try-call-later"));
 				break;
 			case CONGESTION_TONE:
 				$ext->add($contextname, $exten, '', new ext_playtones("congestion"));
 				break;
 			default:
 				$message = recordings_get_file($outroutemsg_ids['emergency_msg_id']);
-				$message = ($message != "") ? $message : "all-circuits-busy-now&pls-try-call-later";
+				$message = ($message != "") ? $message : "all-circuits-busy-now&please-try-call-later";
 				$ext->add($contextname, $exten, '', new ext_playback("$message"));
 		}
 		$ext->add($contextname, $exten, '', new ext_congestion());
@@ -90,7 +90,7 @@ function outroutemsg_add($default_msg_id, $intracompany_msg_id, $emergency_msg_i
 	$emergency_msg_id    = $db->escapeSimple($emergency_msg_id);
 	$no_answer_msg_id    = $db->escapeSimple($no_answer_msg_id);
 	$invalidnmbr_msg_id  = $db->escapeSimple($invalidnmbr_msg_id);
-	
+
 	// in future will do in a outroutemsg_del but not needed for now
 	//
 	$sql = "DELETE FROM outroutemsg WHERE `keyword` IN  ('default_msg_id', 'intracompany_msg_id', 'emergency_msg_id', 'no_answer_msg_id', 'invalidnmbr_msg_id')";
