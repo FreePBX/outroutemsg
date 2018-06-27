@@ -1,42 +1,62 @@
 <?php
 namespace FreePBX\modules;
-/*
- * Class stub for BMO Module class
- * In _Construct you may remove the database line if you don't use it
- * In getActionbar change "modulename" to the display value for the page
- * In getActionbar change extdisplay to align with whatever variable you use to decide if the page is in edit mode.
- *
- */
-class Outroutemsg implements \BMO {
-	public function __construct($freepbx = null) {
-		if ($freepbx == null) {
-			throw new Exception("Not given a FreePBX Object");
-		}
-		$this->FreePBX = $freepbx;
-	}
+use BMO;
+use FreePBX_Helpers;
+use PDO;
+class Outroutemsg extends FreePBX_Helpers implements BMO {
+    const DEFAULT_MSG = -1;
+    const CONGESTION_TONE = -2;
+
     public function install() {}
     public function uninstall() {}
-    public function backup() {}
-    public function restore($backup) {}
     public function doConfigPageInit($page) {}
 	public function getActionBar($request) {
-		$buttons = array();
-		switch($request['display']) {
-			case 'outroutemsg':
-				$buttons = array(
-					'reset' => array(
-						'name' => 'reset',
-						'id' => 'reset',
-						'value' => _('Reset')
-					),
-					'submit' => array(
-						'name' => 'submit',
-						'id' => 'submit',
-						'value' => _('Submit')
-					)
-				);
-			break;
-		}
-		return $buttons;
-	}
+        if($request['display'] === 'outroutemsg'){
+            return [
+                'reset' => [
+					'name' => 'reset',
+					'id' => 'reset',
+					'value' => _('Reset'),
+                ],
+                'submit' => [
+                	'name' => 'submit',
+					'id' => 'submit',
+					'value' => _('Submit'),  
+                ],
+            ];
+        }
+        return [];
+    }
+    public function get(){
+        $sql = "SELECT keyword, data FROM outroutemsg";
+        $results = $this->FreePBX->Database->query($sql,PDO::FETCH_ASSOC);
+        $results['default_msg_id']      = isset($results['default_msg_id'])      ? $results['default_msg_id']      : DEFAULT_MSG;
+        $results['intracompany_msg_id'] = isset($results['intracompany_msg_id']) ? $results['intracompany_msg_id'] : DEFAULT_MSG;
+        $results['emergency_msg_id']    = isset($results['emergency_msg_id'])    ? $results['emergency_msg_id']    : DEFAULT_MSG;
+        $results['no_answer_msg_id']    = isset($results['no_answer_msg_id'])    ? $results['no_answer_msg_id']    : DEFAULT_MSG;
+        $results['invalidnmbr_msg_id']  = isset($results['invalidnmbr_msg_id'])  ? $results['invalidnmbr_msg_id']  : DEFAULT_MSG;
+        return $results;
+    }
+    
+    public function set($default_msg_id, $intracompany_msg_id, $emergency_msg_id, $no_answer_msg_id, $invalidnmbr_msg_id){
+        $this->delete();
+        $stmt = $this->FreePBX->Database->prepare('INSERT INTO outroutemsg (keyword, data) values (:keyword,:data)');
+        $items = [
+            'default_msg_id' => $default_msg_id, 
+            'intracompany_msg_id' => $intracompany_msg_id, 
+            'emergency_msg_id' => $emergency_msg_id, 
+            'no_answer_msg_id' => $no_answer_msg_id, 
+            'invalidnmbr_msg_id' => $invalidnmbr_msg_id,
+        ];
+        foreach ($items as $key => $value) {
+            $stmt->execute([':keyword' => $key, ':data' => $value]);
+        }
+        return $this;
+    }
+
+    public function delete(){
+        $sql = "DELETE FROM outroutemsg WHERE `keyword` IN  ('default_msg_id', 'intracompany_msg_id', 'emergency_msg_id', 'no_answer_msg_id', 'invalidnmbr_msg_id')";
+        $this->FreePBX->Database->query($sql);
+        return $this;
+    }
 }
