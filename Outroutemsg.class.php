@@ -29,7 +29,7 @@ class Outroutemsg extends FreePBX_Helpers implements BMO {
     }
     public function get(){
         $sql = "SELECT keyword, data FROM outroutemsg";
-        $results = $this->FreePBX->Database->query($sql,PDO::FETCH_ASSOC);
+        $results = $this->FreePBX->Database->query($sql)->fetchAll(PDO::FETCH_ASSOC);
         $results['default_msg_id']      = isset($results['default_msg_id'])      ? $results['default_msg_id']      : DEFAULT_MSG;
         $results['intracompany_msg_id'] = isset($results['intracompany_msg_id']) ? $results['intracompany_msg_id'] : DEFAULT_MSG;
         $results['emergency_msg_id']    = isset($results['emergency_msg_id'])    ? $results['emergency_msg_id']    : DEFAULT_MSG;
