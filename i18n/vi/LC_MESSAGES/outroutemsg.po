@@ -3,27 +3,27 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for outroutemsg
-# Copyright (C) 2008-2015 Sangoma, Inc.
+# Copyright (C) 2008-2017 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-16 13:47-0700\n"
-"PO-Revision-Date: 2017-03-27 13:59+0200\n"
-"Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
-"Language-Team: Portuguese (Brazil) "
-"<http://weblate.freepbx.org/projects/freepbx/outroutemsg/pt_BR/>\n"
-"Language: pt_BR\n"
+"PO-Revision-Date: 2017-07-20 13:29+0200\n"
+"Last-Translator: PETER <ftek@ymail.com>\n"
+"Language-Team: Vietnamese "
+"<http://weblate.freepbx.org/projects/freepbx/outroutemsg/vi/>\n"
+"Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.4\n"
 
 #: install.php:17
 msgid "Can not create outroutemsg table"
-msgstr "Não é possível criar tabela outroutemsg"
+msgstr "Không thể tạo bảng outroutemsg"
 
 #: outroutemsg.i18n.php:8
 msgid ""
@@ -31,28 +31,31 @@ msgid ""
 "route. Allows different messages for Emergency Routes and Intra-Company "
 "Routes"
 msgstr ""
+"Cấu hình các âm báo tin nhắn hay âm bận khi tất cả các trung kế bận tại cngf "
+"một tuyến. Cho phép các tin nhắn khác nhau đối với các tuyến khẩn cấp và các "
+"tuyến nội bộ công ty"
 
 #: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
 #: page.outroutemsg.php:182 page.outroutemsg.php:216
 msgid "Congestion Tones"
-msgstr "Tons de Congestionamento"
+msgstr "Âm bận"
 
 #: page.outroutemsg.php:77 page.outroutemsg.php:111 page.outroutemsg.php:145
 #: page.outroutemsg.php:181 page.outroutemsg.php:215
 msgid "Default Message"
-msgstr "Mensagem Padrão"
+msgstr "Mặc định tin nhắn"
 
 #: page.outroutemsg.php:139
 msgid "Emergency Routes"
-msgstr "Rotas de Emergência"
+msgstr "Các tuyến khẩn cấp"
 
 #: page.outroutemsg.php:105
 msgid "Intra-Company Routes"
-msgstr "Rotas Intra-Company"
+msgstr "Các tuyến nội bộ công ty"
 
 #: page.outroutemsg.php:93
 msgid "Message or tone to be played if no trunks are available."
-msgstr "Mensagem ou tom a ser reproduzido se não houver troncos disponíveis."
+msgstr "Tin nhắn hay âm báo sẽ được phát nếu không có trung kế nào khả dụng."
 
 #: page.outroutemsg.php:161
 msgid ""
@@ -61,26 +64,26 @@ msgid ""
 "alternative means of calling emergency services such as a cell phone or "
 "alarm system panel."
 msgstr ""
-"Mensagem ou tom a ser reproduzido se não houver troncos disponíveis. Usado "
-"em todas as rotas de emergência. Considere uma mensagem instruindo os "
-"usuários chamadores para encontrar um meio alternativo de chamar serviços de "
-"emergência, como um telefone celular ou painel do sistema de alarme."
+"Tin nhắn hay âm báo sẽ được phát nế không có trung kế nào khả dụng. Được sử "
+"dụng trên các tuyến khẩn cấp. Lưu ý đến tin nhắn hướng dẫn cho người gọi để "
+"tìm kiếm các phương tiện thay thế cho các dịch vụ gọi khẩn cấp chẳng hạn như "
+"điện thoại di động hay tủ hệ thống báo động."
 
 #: page.outroutemsg.php:127
 msgid ""
 "Message or tone to be played if no trunks are available. Used on routes "
 "marked as intra-company only."
 msgstr ""
-"Mensagem ou tom a ser reproduzido se não houver troncos disponíveis. "
-"Utilizado em rotas marcadas como intra-company apenas."
+"Tin nhắn hay âm báo sẽ được phát nếu không có trung kế nào khả dụng. Chỉ "
+"được sử dụng trên các tuyến đã được đánh dấu như nội bộ công ty."
 
 #: page.outroutemsg.php:197
 msgid ""
 "Message or tone to be played if there was no answer. Default message is:<br>"
 "\"The number is not answering.\"<br> Hangupcause is 18 or 19"
 msgstr ""
-"Mensagem ou tom a ser reproduzido se não houver resposta. Mensagem padrão é: "
-"<br>\"O número não está respondendo.\"<br>Hangupcause é 18 ou 19"
+"Tin nhắn hay âm báo sẽ được bật nếu không có trả lời. Mặc định tin nhắn:<br>"
+"\"Số điện thoại đang không trả lời. Hangupcause là 18 hoặc 19"
 
 #: page.outroutemsg.php:231
 msgid ""
@@ -89,44 +92,44 @@ msgid ""
 "message is:<br>\"The number you have dialed is not in service. Please check "
 "the number and try again.\"<br>Hangupcause is 28"
 msgstr ""
-"Mensagem ou tom a ser reproduzido se o tronco informar Número ou Endereço "
-"Incompleto. Normalmente, isso significa que o número que você discou é "
-"curto. A mensagem padrão é: <br>\"O número que você discou não está em "
-"serviço. Verifique o número e tente novamente.\" <br>Hangupcause é 28"
+"Tin nhắn hay âm báo sẽ được phát nếu trung kế báo cáo số hay địa chỉ không "
+"đầy đủ. Thông thường điề này có nghĩa là số mà bạn đang gọi quá ngắn. Mặc "
+"định tin nhắn là <br> \" Số bạn vừa quay ngoài vùng dịch vụ. Vui lòng kiểm "
+"tra số và thử lại. \"<br>Hangupcase là 28"
 
 #: page.outroutemsg.php:175
 msgid "No Answer"
-msgstr "Não Responde"
+msgstr "Không trả lời"
 
 #: page.outroutemsg.php:53
 msgid "No Routes Available"
-msgstr "Nenhuma Rota Disponível"
+msgstr "Không có tuyến nào khả dụng"
 
 #: page.outroutemsg.php:209
 msgid "Number or Address Incomplete"
-msgstr "Número ou Endereço Incompleto"
+msgstr "Số và địa chỉ không đầy đủ"
 
 #: Outroutemsg.class.php:30
 msgid "Reset"
-msgstr "Reiniciar"
+msgstr "Cài đặt lại"
 
 #: functions.inc.php:142 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
 #: page.outroutemsg.php:42
 msgid "Route Congestion Messages"
-msgstr "Mensagem de Falha de Rotas"
+msgstr "Tin nhắn báo tuyến bận"
 
 #: outroutemsg.i18n.php:6
 msgid "Settings"
-msgstr ""
+msgstr "Cài đặt"
 
 #: page.outroutemsg.php:71
 msgid "Standard Routes"
-msgstr "Rotas Padrões"
+msgstr "Các tuyến tiêu chuẩn"
 
 #: Outroutemsg.class.php:35
 msgid "Submit"
-msgstr "Enviar"
+msgstr "Gửi đi"
 
 #: page.outroutemsg.php:58
 msgid "Trunk Failures"
-msgstr "Falhas de Tronco"
+msgstr "Các sự cố trung kế"
