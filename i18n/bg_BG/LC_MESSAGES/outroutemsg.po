@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 13:47-0700\n"
+"POT-Creation-Date: 2018-08-20 12:50-0400\n"
 "PO-Revision-Date: 2018-07-03 12:16+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/outroutemsg/bg/>\n"
@@ -31,19 +31,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 2.19.1\n"
 
-#: install.php:17
-msgid "Can not create outroutemsg table"
-msgstr "Не мога да създам таблица outroutemsg"
-
 #: outroutemsg.i18n.php:8
 msgid ""
 "Configures message or congestion tones played when all trunks are busy in a "
-"route. Allows different messages for Emergency Routes and Intra-Company "
-"Routes"
+"route. Allows different messages for Emergency        Routes and Intra-"
+"Company Routes"
 msgstr ""
-"Конфигуриране на съобщение или тон за претоварване, които да се "
-"възпроизвеждат когато всички линии в маршрута са заети. Позволява избирането "
-"на различни съобщения за Маршрути за Спешни Случаи и Между Фирмени Маршрути"
 
 #: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
 #: page.outroutemsg.php:182 page.outroutemsg.php:216
@@ -123,11 +116,11 @@ msgstr "Няма Достъпни Маршрути"
 msgid "Number or Address Incomplete"
 msgstr "Непълен Номер или Адрес"
 
-#: Outroutemsg.class.php:30
+#: Outroutemsg.class.php:27
 msgid "Reset"
 msgstr "Изчисти"
 
-#: functions.inc.php:142 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
+#: functions.inc.php:106 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
 #: page.outroutemsg.php:42
 msgid "Route Congestion Messages"
 msgstr "Претоварване на Маршрут"
@@ -140,13 +133,26 @@ msgstr "Настройки"
 msgid "Standard Routes"
 msgstr "Стандартни Маршрути"
 
-#: Outroutemsg.class.php:35
+#: Outroutemsg.class.php:32
 msgid "Submit"
 msgstr "Приеми"
 
 #: page.outroutemsg.php:58
 msgid "Trunk Failures"
 msgstr "Отпадания на Външна Линия"
+
+#~ msgid "Can not create outroutemsg table"
+#~ msgstr "Не мога да създам таблица outroutemsg"
+
+#~ msgid ""
+#~ "Configures message or congestion tones played when all trunks are busy in "
+#~ "a route. Allows different messages for Emergency Routes and Intra-Company "
+#~ "Routes"
+#~ msgstr ""
+#~ "Конфигуриране на съобщение или тон за претоварване, които да се "
+#~ "възпроизвеждат когато всички линии в маршрута са заети. Позволява "
+#~ "избирането на различни съобщения за Маршрути за Спешни Случаи и Между "
+#~ "Фирмени Маршрути"
 
 #~ msgid "Message or Tone"
 #~ msgstr "Съобщение или Тон"

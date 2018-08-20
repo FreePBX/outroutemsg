@@ -2,7 +2,7 @@
     <rawname>outroutemsg</rawname>
     <repo>standard</repo>
     <name>Route Congestion Messages</name>
-    <version>15.0.1</version>
+    <version>15.0.2</version>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
     <licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -15,13 +15,14 @@
     </menuitems>
     <database>
         <table name="outroutemsg">
-            <field name="keyword" type="string" length="40" default="" primarykey="true" />
-            <field name="data" type="string" length="10" />
+            <field name="keyword" type="string" length="40" default="" primarykey="true"/>
+            <field name="data" type="string" length="10"/>
         </table>
     </database>
     <changelog>
-        *15.0.1* Add Backup 15.0 
-    </changelog>
+		*15.0.2* Packaging of ver 15.0.2
+        *15.0.1* Add Backup 15.0
+	</changelog>
     <depends>
         <module>recordings</module>
     </depends>

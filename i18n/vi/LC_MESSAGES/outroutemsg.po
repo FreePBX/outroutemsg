@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-16 13:47-0700\n"
+"POT-Creation-Date: 2018-08-20 12:50-0400\n"
 "PO-Revision-Date: 2017-07-20 13:29+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
-"Language-Team: Vietnamese "
-"<http://weblate.freepbx.org/projects/freepbx/outroutemsg/vi/>\n"
+"Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
+"outroutemsg/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,19 +21,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 2.4\n"
 
-#: install.php:17
-msgid "Can not create outroutemsg table"
-msgstr "Không thể tạo bảng outroutemsg"
-
 #: outroutemsg.i18n.php:8
 msgid ""
 "Configures message or congestion tones played when all trunks are busy in a "
-"route. Allows different messages for Emergency Routes and Intra-Company "
-"Routes"
+"route. Allows different messages for Emergency        Routes and Intra-"
+"Company Routes"
 msgstr ""
-"Cấu hình các âm báo tin nhắn hay âm bận khi tất cả các trung kế bận tại cngf "
-"một tuyến. Cho phép các tin nhắn khác nhau đối với các tuyến khẩn cấp và các "
-"tuyến nội bộ công ty"
 
 #: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
 #: page.outroutemsg.php:182 page.outroutemsg.php:216
@@ -109,11 +102,11 @@ msgstr "Không có tuyến nào khả dụng"
 msgid "Number or Address Incomplete"
 msgstr "Số và địa chỉ không đầy đủ"
 
-#: Outroutemsg.class.php:30
+#: Outroutemsg.class.php:27
 msgid "Reset"
 msgstr "Cài đặt lại"
 
-#: functions.inc.php:142 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
+#: functions.inc.php:106 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
 #: page.outroutemsg.php:42
 msgid "Route Congestion Messages"
 msgstr "Tin nhắn báo tuyến bận"
@@ -126,10 +119,22 @@ msgstr "Cài đặt"
 msgid "Standard Routes"
 msgstr "Các tuyến tiêu chuẩn"
 
-#: Outroutemsg.class.php:35
+#: Outroutemsg.class.php:32
 msgid "Submit"
 msgstr "Gửi đi"
 
 #: page.outroutemsg.php:58
 msgid "Trunk Failures"
 msgstr "Các sự cố trung kế"
+
+#~ msgid "Can not create outroutemsg table"
+#~ msgstr "Không thể tạo bảng outroutemsg"
+
+#~ msgid ""
+#~ "Configures message or congestion tones played when all trunks are busy in "
+#~ "a route. Allows different messages for Emergency Routes and Intra-Company "
+#~ "Routes"
+#~ msgstr ""
+#~ "Cấu hình các âm báo tin nhắn hay âm bận khi tất cả các trung kế bận tại "
+#~ "cngf một tuyến. Cho phép các tin nhắn khác nhau đối với các tuyến khẩn "
+#~ "cấp và các tuyến nội bộ công ty"
