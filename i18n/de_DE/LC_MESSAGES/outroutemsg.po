@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-16 13:47-0700\n"
-"PO-Revision-Date: 2018-08-25 12:00+0000\n"
+"PO-Revision-Date: 2018-10-19 15:00+0000\n"
 "Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
 "Language-Team: German <http://*/projects/freepbx/outroutemsg/de/>\n"
 "Language: de_DE\n"
@@ -104,11 +104,11 @@ msgstr ""
 
 #: outroutemsg.i18n.php:6
 msgid "Settings"
-msgstr "Einstellung"
+msgstr "Einstellungen"
 
 #: page.outroutemsg.php:71
 msgid "Standard Routes"
-msgstr ""
+msgstr "Standardrouten"
 
 #: Outroutemsg.class.php:35
 msgid "Submit"
