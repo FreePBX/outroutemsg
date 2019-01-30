@@ -26,6 +26,9 @@
   <depends>
     <module>recordings ge 3.3.8</module>
   </depends>
+<methods>
+	<get_config pri="580">outroutemsg_get_config</get_config>
+</methods>
   <location>release/2.11/outroutemsg-2.11.0.0.tgz</location>
   <md5sum>c161073dabd8954d5ce3f4230c4a0902</md5sum>
   <supported>
