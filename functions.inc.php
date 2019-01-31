@@ -29,7 +29,7 @@ function outroutemsg_get_config($engine) {
 		$outroutemsg_ids = outroutemsg_get();
 		$exten = 's';
 
-		$ext->add($contextname, $exten, '', new ext_progress());
+		$ext->replace($contextname, $exten, '1', new ext_progress());
 		$ext->add($contextname, $exten, '', new ext_gotoif('$["${EMERGENCYROUTE}" = "YES"]', 'emergency,1'));
 		$ext->add($contextname, $exten, '', new ext_gotoif('$["${INTRACOMPANYROUTE}" = "YES"]', 'intracompany,1'));
 
