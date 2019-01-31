@@ -25,6 +25,7 @@
 	</changelog>
   <depends>
     <module>recordings ge 3.3.8</module>
+    <module>core ge 13.0.122.58</module>
   </depends>
 <methods>
 	<get_config pri="580">outroutemsg_get_config</get_config>
