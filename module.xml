@@ -25,6 +25,7 @@
 	</changelog>
     <depends>
         <module>recordings</module>
+	<module>core ge 15.0.3.52</module>
     </depends>
     <supported>
         <version>15.0</version>
