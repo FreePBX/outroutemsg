@@ -3,27 +3,26 @@
 # For licensing information, please see the file named LICENSE located in the module directory
 #
 # FreePBX language template for outroutemsg
-# Copyright (C) 2008-2015 Sangoma, Inc.
+# Copyright (C) 2008-2017 Sangoma Technologies, Inc.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-16 13:47-0700\n"
-"PO-Revision-Date: 2017-03-27 13:59+0200\n"
-"Last-Translator: KNGVC <suporte@kingvoice.com.br>\n"
-"Language-Team: Portuguese (Brazil) "
-"<http://weblate.freepbx.org/projects/freepbx/outroutemsg/pt_BR/>\n"
-"Language: pt_BR\n"
+"PO-Revision-Date: 2018-10-19 15:00+0000\n"
+"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
+"Language-Team: German <http://*/projects/freepbx/outroutemsg/de/>\n"
+"Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: install.php:17
 msgid "Can not create outroutemsg table"
-msgstr "Não é possível criar tabela outroutemsg"
+msgstr ""
 
 #: outroutemsg.i18n.php:8
 msgid ""
@@ -35,24 +34,24 @@ msgstr ""
 #: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
 #: page.outroutemsg.php:182 page.outroutemsg.php:216
 msgid "Congestion Tones"
-msgstr "Tons de Congestionamento"
+msgstr ""
 
 #: page.outroutemsg.php:77 page.outroutemsg.php:111 page.outroutemsg.php:145
 #: page.outroutemsg.php:181 page.outroutemsg.php:215
 msgid "Default Message"
-msgstr "Mensagem Padrão"
+msgstr ""
 
 #: page.outroutemsg.php:139
 msgid "Emergency Routes"
-msgstr "Rotas de Emergência"
+msgstr ""
 
 #: page.outroutemsg.php:105
 msgid "Intra-Company Routes"
-msgstr "Rotas Intra-Company"
+msgstr ""
 
 #: page.outroutemsg.php:93
 msgid "Message or tone to be played if no trunks are available."
-msgstr "Mensagem ou tom a ser reproduzido se não houver troncos disponíveis."
+msgstr ""
 
 #: page.outroutemsg.php:161
 msgid ""
@@ -61,26 +60,18 @@ msgid ""
 "alternative means of calling emergency services such as a cell phone or "
 "alarm system panel."
 msgstr ""
-"Mensagem ou tom a ser reproduzido se não houver troncos disponíveis. Usado "
-"em todas as rotas de emergência. Considere uma mensagem instruindo os "
-"usuários chamadores para encontrar um meio alternativo de chamar serviços de "
-"emergência, como um telefone celular ou painel do sistema de alarme."
 
 #: page.outroutemsg.php:127
 msgid ""
 "Message or tone to be played if no trunks are available. Used on routes "
 "marked as intra-company only."
 msgstr ""
-"Mensagem ou tom a ser reproduzido se não houver troncos disponíveis. "
-"Utilizado em rotas marcadas como intra-company apenas."
 
 #: page.outroutemsg.php:197
 msgid ""
 "Message or tone to be played if there was no answer. Default message is:<br>"
 "\"The number is not answering.\"<br> Hangupcause is 18 or 19"
 msgstr ""
-"Mensagem ou tom a ser reproduzido se não houver resposta. Mensagem padrão é: "
-"<br>\"O número não está respondendo.\"<br>Hangupcause é 18 ou 19"
 
 #: page.outroutemsg.php:231
 msgid ""
@@ -89,44 +80,40 @@ msgid ""
 "message is:<br>\"The number you have dialed is not in service. Please check "
 "the number and try again.\"<br>Hangupcause is 28"
 msgstr ""
-"Mensagem ou tom a ser reproduzido se o tronco informar Número ou Endereço "
-"Incompleto. Normalmente, isso significa que o número que você discou é "
-"curto. A mensagem padrão é: <br>\"O número que você discou não está em "
-"serviço. Verifique o número e tente novamente.\" <br>Hangupcause é 28"
 
 #: page.outroutemsg.php:175
 msgid "No Answer"
-msgstr "Não Responde"
+msgstr ""
 
 #: page.outroutemsg.php:53
 msgid "No Routes Available"
-msgstr "Nenhuma Rota Disponível"
+msgstr ""
 
 #: page.outroutemsg.php:209
 msgid "Number or Address Incomplete"
-msgstr "Número ou Endereço Incompleto"
+msgstr ""
 
 #: Outroutemsg.class.php:30
 msgid "Reset"
-msgstr "Reiniciar"
+msgstr "Zurücksetzen"
 
 #: functions.inc.php:142 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
 #: page.outroutemsg.php:42
 msgid "Route Congestion Messages"
-msgstr "Mensagem de Falha de Rotas"
+msgstr ""
 
 #: outroutemsg.i18n.php:6
 msgid "Settings"
-msgstr ""
+msgstr "Einstellungen"
 
 #: page.outroutemsg.php:71
 msgid "Standard Routes"
-msgstr "Rotas Padrões"
+msgstr "Standardrouten"
 
 #: Outroutemsg.class.php:35
 msgid "Submit"
-msgstr "Enviar"
+msgstr "Absenden"
 
 #: page.outroutemsg.php:58
 msgid "Trunk Failures"
-msgstr "Falhas de Tronco"
+msgstr ""

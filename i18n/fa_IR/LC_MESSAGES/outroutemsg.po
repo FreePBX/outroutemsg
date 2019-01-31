@@ -10,16 +10,15 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-16 13:47-0700\n"
-"PO-Revision-Date: 2016-03-16 23:44+0200\n"
-"Last-Translator: Media <mousavi.media@gmail.com>\n"
-"Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
-"outroutemsg/fa/>\n"
+"PO-Revision-Date: 2019-01-25 14:20+0000\n"
+"Last-Translator: Media Mousavi <mousavi.media@gmail.com>\n"
+"Language-Team: Persian <http://*/projects/freepbx/outroutemsg/fa/>\n"
+"Language: fa_IR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fa\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.4\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: install.php:17
 msgid "Can not create outroutemsg table"
@@ -31,6 +30,9 @@ msgid ""
 "route. Allows different messages for Emergency Routes and Intra-Company "
 "Routes"
 msgstr ""
+"تنظیمات پیام یا زنگ های بارگیری زمانی انجام می شود که تمام تنه ها در یک مسیر "
+"مشغول باشند. به پیام های مختلف برای مسیرهای اضطراری و مسیرهای درون شرکت "
+"اجازه می دهد"
 
 #: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
 #: page.outroutemsg.php:182 page.outroutemsg.php:216
@@ -110,7 +112,7 @@ msgstr "مجموع پیام های مسیر"
 
 #: outroutemsg.i18n.php:6
 msgid "Settings"
-msgstr ""
+msgstr "تنظیمات"
 
 #: page.outroutemsg.php:71
 msgid "Standard Routes"
