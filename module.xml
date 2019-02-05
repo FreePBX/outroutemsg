@@ -29,6 +29,9 @@
         <module>recordings</module>
 	<module>core ge 15.0.3.25</module>
     </depends>
+	<methods>
+		<get_config pri="580">outroutemsg_get_config</get_config>
+	</methods>
     <supported>
         <version>15.0</version>
     </supported>
