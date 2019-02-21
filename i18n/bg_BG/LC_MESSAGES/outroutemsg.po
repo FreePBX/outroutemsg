@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:50-0400\n"
+"POT-Creation-Date: 2019-02-21 17:58-0500\n"
 "PO-Revision-Date: 2018-07-03 12:16+0000\n"
 "Last-Translator: Chavdar Shtiliyanov <chavdar_75@yahoo.com>\n"
 "Language-Team: Bulgarian <http://*/projects/freepbx/outroutemsg/bg/>\n"
@@ -116,7 +116,7 @@ msgstr "Няма Достъпни Маршрути"
 msgid "Number or Address Incomplete"
 msgstr "Непълен Номер или Адрес"
 
-#: Outroutemsg.class.php:27
+#: Outroutemsg.class.php:19
 msgid "Reset"
 msgstr "Изчисти"
 
@@ -133,7 +133,7 @@ msgstr "Настройки"
 msgid "Standard Routes"
 msgstr "Стандартни Маршрути"
 
-#: Outroutemsg.class.php:32
+#: Outroutemsg.class.php:24
 msgid "Submit"
 msgstr "Приеми"
 

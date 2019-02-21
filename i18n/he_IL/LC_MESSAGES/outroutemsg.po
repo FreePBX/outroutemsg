@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:50-0400\n"
+"POT-Creation-Date: 2019-02-21 17:58-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,7 +98,7 @@ msgstr ""
 msgid "Number or Address Incomplete"
 msgstr ""
 
-#: Outroutemsg.class.php:27
+#: Outroutemsg.class.php:19
 msgid "Reset"
 msgstr ""
 
@@ -115,7 +115,7 @@ msgstr ""
 msgid "Standard Routes"
 msgstr ""
 
-#: Outroutemsg.class.php:32
+#: Outroutemsg.class.php:24
 msgid "Submit"
 msgstr ""
 

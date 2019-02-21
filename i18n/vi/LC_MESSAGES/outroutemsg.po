@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:50-0400\n"
+"POT-Creation-Date: 2019-02-21 17:58-0500\n"
 "PO-Revision-Date: 2017-07-20 13:29+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -102,7 +102,7 @@ msgstr "Không có tuyến nào khả dụng"
 msgid "Number or Address Incomplete"
 msgstr "Số và địa chỉ không đầy đủ"
 
-#: Outroutemsg.class.php:27
+#: Outroutemsg.class.php:19
 msgid "Reset"
 msgstr "Cài đặt lại"
 
@@ -119,7 +119,7 @@ msgstr "Cài đặt"
 msgid "Standard Routes"
 msgstr "Các tuyến tiêu chuẩn"
 
-#: Outroutemsg.class.php:32
+#: Outroutemsg.class.php:24
 msgid "Submit"
 msgstr "Gửi đi"
 

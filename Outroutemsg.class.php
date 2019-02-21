@@ -6,15 +6,7 @@ use PDO;
 class Outroutemsg extends FreePBX_Helpers implements BMO {
     const DEFAULT_MSG = -1;
     const CONGESTION_TONE = -2;
-    public function setDatabase($pdo){
-    $this->Database = $pdo;
-    return $this;
-    }
-    
-    public function resetDatabase(){
-    $this->Database = $this->FreePBX->Database;
-    return $this;
-    }
+
     public function install() {}
     public function uninstall() {}
     public function doConfigPageInit($page) {}
@@ -29,7 +21,7 @@ class Outroutemsg extends FreePBX_Helpers implements BMO {
                 'submit' => [
                 	'name' => 'submit',
 					'id' => 'submit',
-					'value' => _('Submit'),  
+					'value' => _('Submit'),
                 ],
             ];
         }
@@ -46,15 +38,15 @@ class Outroutemsg extends FreePBX_Helpers implements BMO {
         $results['invalidnmbr_msg_id']  = isset($results['invalidnmbr_msg_id'])  ? $results['invalidnmbr_msg_id']  : DEFAULT_MSG;
         return $results;
     }
-    
+
     public function set($default_msg_id, $intracompany_msg_id, $emergency_msg_id, $no_answer_msg_id, $invalidnmbr_msg_id){
         $this->delete();
         $stmt = $this->Database->prepare('INSERT INTO outroutemsg (keyword, data) values (:keyword,:data)');
         $items = [
-            'default_msg_id' => $default_msg_id, 
-            'intracompany_msg_id' => $intracompany_msg_id, 
-            'emergency_msg_id' => $emergency_msg_id, 
-            'no_answer_msg_id' => $no_answer_msg_id, 
+            'default_msg_id' => $default_msg_id,
+            'intracompany_msg_id' => $intracompany_msg_id,
+            'emergency_msg_id' => $emergency_msg_id,
+            'no_answer_msg_id' => $no_answer_msg_id,
             'invalidnmbr_msg_id' => $invalidnmbr_msg_id,
         ];
         foreach ($items as $key => $value) {

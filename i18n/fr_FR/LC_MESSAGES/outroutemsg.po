@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:50-0400\n"
+"POT-Creation-Date: 2019-02-21 17:58-0500\n"
 "PO-Revision-Date: 2017-03-17 01:24+0200\n"
 "Last-Translator: Nicolas <freepbx@riendeau.org>\n"
 "Language-Team: French <http://weblate.freepbx.org/projects/freepbx/"
@@ -90,7 +90,7 @@ msgstr "Pas de route disponible"
 msgid "Number or Address Incomplete"
 msgstr "Numéro ou adresse incomplète"
 
-#: Outroutemsg.class.php:27
+#: Outroutemsg.class.php:19
 msgid "Reset"
 msgstr "Réinitialiser"
 
@@ -107,7 +107,7 @@ msgstr "Paramètres"
 msgid "Standard Routes"
 msgstr "Routes standards"
 
-#: Outroutemsg.class.php:32
+#: Outroutemsg.class.php:24
 msgid "Submit"
 msgstr "Soumettre"
 

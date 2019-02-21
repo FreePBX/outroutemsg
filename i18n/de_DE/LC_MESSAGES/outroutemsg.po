@@ -67,7 +67,7 @@ msgstr ""
 msgid "Number or Address Incomplete"
 msgstr ""
 
-#: Outroutemsg.class.php:27
+#: Outroutemsg.class.php:19
 msgid "Reset"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr ""
 msgid "Standard Routes"
 msgstr ""
 
-#: Outroutemsg.class.php:32
+#: Outroutemsg.class.php:24
 msgid "Submit"
 msgstr ""
 

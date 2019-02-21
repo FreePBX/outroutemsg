@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-20 12:50-0400\n"
+"POT-Creation-Date: 2019-02-21 17:58-0500\n"
 "PO-Revision-Date: 2015-04-25 00:19+0200\n"
 "Last-Translator: Yuriy <alliancesko@gmail.com>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
@@ -104,7 +104,7 @@ msgstr "Нет доступных маршрутов"
 msgid "Number or Address Incomplete"
 msgstr "Номер или адрес неполный"
 
-#: Outroutemsg.class.php:27
+#: Outroutemsg.class.php:19
 msgid "Reset"
 msgstr ""
 
@@ -121,7 +121,7 @@ msgstr "Установки"
 msgid "Standard Routes"
 msgstr "Стандартные маршруты"
 
-#: Outroutemsg.class.php:32
+#: Outroutemsg.class.php:24
 msgid "Submit"
 msgstr ""
 
