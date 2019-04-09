@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-16 13:47-0700\n"
-"PO-Revision-Date: 2018-10-19 15:00+0000\n"
-"Last-Translator: Bastian Mertgen <b.mertgen@bastian-mertgen.de>\n"
+"PO-Revision-Date: 2019-04-09 15:02+0000\n"
+"Last-Translator: florian alberts <alberts@ar-systems.de>\n"
 "Language-Team: German <http://*/projects/freepbx/outroutemsg/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: install.php:17
 msgid "Can not create outroutemsg table"
-msgstr ""
+msgstr "Kann Tabelle outroutemsg nicht erstellen"
 
 #: outroutemsg.i18n.php:8
 msgid ""
@@ -30,28 +30,31 @@ msgid ""
 "route. Allows different messages for Emergency Routes and Intra-Company "
 "Routes"
 msgstr ""
+"Konfiguriert Nachrichten oder Überlastsignal/Gassenbesetztzeichen, die "
+"abgespielt werden wenn alle Leitungen einer Route belegt sind. Erlaubt "
+"verschiedene Nachrichten für Notrufnummern und firmeninterne Routen"
 
 #: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
 #: page.outroutemsg.php:182 page.outroutemsg.php:216
 msgid "Congestion Tones"
-msgstr ""
+msgstr "Überlast-Signalisierungstöne"
 
 #: page.outroutemsg.php:77 page.outroutemsg.php:111 page.outroutemsg.php:145
 #: page.outroutemsg.php:181 page.outroutemsg.php:215
 msgid "Default Message"
-msgstr ""
+msgstr "Standardnachricht"
 
 #: page.outroutemsg.php:139
 msgid "Emergency Routes"
-msgstr ""
+msgstr "Notrufnummern"
 
 #: page.outroutemsg.php:105
 msgid "Intra-Company Routes"
-msgstr ""
+msgstr "Interne Telefonie"
 
 #: page.outroutemsg.php:93
 msgid "Message or tone to be played if no trunks are available."
-msgstr ""
+msgstr "Abzuspielende Nachricht oder Ton falls keine Anschlüsse verfügbar sind."
 
 #: page.outroutemsg.php:161
 msgid ""
@@ -60,18 +63,27 @@ msgid ""
 "alternative means of calling emergency services such as a cell phone or "
 "alarm system panel."
 msgstr ""
+"Abzuspielende Nachricht oder Ton falls keine Anschlüsse verfügbar sind. Wird "
+"bei allen Notrufnummern verwendet. Hinterlegen Sie eine Nachricht mit "
+"Anweisungen zu alternativen Möglichkeiten der Absetzung eines Notrufs, z.B. "
+"Handy oder Alarmauslöser."
 
 #: page.outroutemsg.php:127
 msgid ""
 "Message or tone to be played if no trunks are available. Used on routes "
 "marked as intra-company only."
 msgstr ""
+"Abzuspielende Nachricht oder Ton falls keine Anschlüsse verfügbar sind. Wird "
+"nur bei interner Telefonie verwendet."
 
 #: page.outroutemsg.php:197
 msgid ""
 "Message or tone to be played if there was no answer. Default message is:<br>"
 "\"The number is not answering.\"<br> Hangupcause is 18 or 19"
 msgstr ""
+"Abzuspielende Nachricht oder Ton wenn Ruf nicht beantwortet wurde. "
+"Normalerweise<br> \"Der Teilnehmer antwortet nicht.\"<br>Grund fürs Auflegen "
+"ist 18 oder 19"
 
 #: page.outroutemsg.php:231
 msgid ""
@@ -80,18 +92,23 @@ msgid ""
 "message is:<br>\"The number you have dialed is not in service. Please check "
 "the number and try again.\"<br>Hangupcause is 28"
 msgstr ""
+"Abzuspielende Nachricht oder Ton wenn der Anschluss sagt, dass die Nummer "
+"oder Adresse unvollständig ist. Soll heissen: Die Nummer ist zu kurz. "
+"Standardnachricht ist: <br> \"Die gewählte Nummer ist nicht in Gebrauch. "
+"Bitte überprüfen Sie die Nummer und versuchen Sie es erneut.\"<br> Der Grund "
+"des Auflegens ist 28"
 
 #: page.outroutemsg.php:175
 msgid "No Answer"
-msgstr ""
+msgstr "Keine Antwort"
 
 #: page.outroutemsg.php:53
 msgid "No Routes Available"
-msgstr ""
+msgstr "Keine Routen verfügbar"
 
 #: page.outroutemsg.php:209
 msgid "Number or Address Incomplete"
-msgstr ""
+msgstr "Nummer oder Adresse unvollständig"
 
 #: Outroutemsg.class.php:30
 msgid "Reset"
@@ -100,7 +117,7 @@ msgstr "Zurücksetzen"
 #: functions.inc.php:142 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
 #: page.outroutemsg.php:42
 msgid "Route Congestion Messages"
-msgstr ""
+msgstr "Leitungsüberlast Nachrichten"
 
 #: outroutemsg.i18n.php:6
 msgid "Settings"
@@ -116,4 +133,4 @@ msgstr "Absenden"
 
 #: page.outroutemsg.php:58
 msgid "Trunk Failures"
-msgstr ""
+msgstr "Fehler in der Amtsleitung"
