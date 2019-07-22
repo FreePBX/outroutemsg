@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-21 17:58-0500\n"
+"POT-Creation-Date: 2019-07-22 16:17+0530\n"
 "PO-Revision-Date: 2014-02-19 20:56+0200\n"
 "Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/outroutemsg/ja/"
@@ -52,9 +52,11 @@ msgstr ""
 #: outroutemsg.i18n.php:8
 msgid ""
 "Configures message or congestion tones played when all trunks are busy in a "
-"route. Allows different messages for Emergency        Routes and Intra-"
-"Company Routes"
+"route. Allows different messages for Emergency Routes and Intra-Company "
+"Routes"
 msgstr ""
+"ルート内の全てのトランクがビジー状態のときに再生されるメッセージ又は輻輳トー"
+"ンを設定します。緊急ルートや社内ルートに対して異なるメッセージを許可します。"
 
 #: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
 #: page.outroutemsg.php:182 page.outroutemsg.php:216
@@ -158,15 +160,6 @@ msgstr "トランクの障害"
 
 #~ msgid "Can not create outroutemsg table"
 #~ msgstr "outroutemsgテーブルの作成ができません"
-
-#~ msgid ""
-#~ "Configures message or congestion tones played when all trunks are busy in "
-#~ "a route. Allows different messages for Emergency Routes and Intra-Company "
-#~ "Routes"
-#~ msgstr ""
-#~ "ルート内の全てのトランクがビジー状態のときに再生されるメッセージ又は輻輳"
-#~ "トーンを設定します。緊急ルートや社内ルートに対して異なるメッセージを許可し"
-#~ "ます。"
 
 #~ msgid "Message or Tone"
 #~ msgstr "メッセージ or トーン"
