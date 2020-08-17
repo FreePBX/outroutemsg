@@ -7,8 +7,8 @@
 	<license>GPLv3+</license>
 	<licenselink>http://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
   <category>Settings</category>
-  <description>Configures message or congestion tones played when all trunks are busy in a route. Allows different messages for Emergency Routes and Intra-Company Routes
-	</description>
+  <description>Configures message or congestion tones played when all trunks are busy in a route. Allows different messages for Emergency Routes and Intra-Company Routes.</description>
+  <more-info>https://wiki.freepbx.org/display/FPG/Route+Congestion+Messages</more-info>
   <menuitems>
     <outroutemsg>Route Congestion Messages</outroutemsg>
   </menuitems>
