@@ -1,8 +1,8 @@
 #: outroutemsg.i18n.php:8
 msgid ""
 "Configures message or congestion tones played when all trunks are busy in a "
-"route. Allows different messages for Emergency Routes and Intra-Company "
-"Routes"
+"route. Allows different messages for Emergency        Routes and Intra-"
+"Company Routes"
 msgstr ""
 
 #: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
