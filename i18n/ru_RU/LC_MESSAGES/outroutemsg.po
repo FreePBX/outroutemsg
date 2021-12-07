@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-31 14:38+0530\n"
-"PO-Revision-Date: 2021-11-23 07:00+0000\n"
+"PO-Revision-Date: 2021-12-07 05:55+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "outroutemsg/ru/>\n"
@@ -113,7 +113,7 @@ msgstr "Номер или адрес неполный"
 
 #: Outroutemsg.class.php:30
 msgid "Reset"
-msgstr ""
+msgstr "Сброс"
 
 #: functions.inc.php:142 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
 #: page.outroutemsg.php:42
