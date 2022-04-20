@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: 1.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-31 14:38+0530\n"
-"PO-Revision-Date: 2021-12-07 05:55+0000\n"
+"PO-Revision-Date: 2022-04-21 09:01+0000\n"
 "Last-Translator: Dmitriy Q <krotesk@ya.ru>\n"
 "Language-Team: Russian <http://weblate.freepbx.org/projects/freepbx/"
 "outroutemsg/ru/>\n"
@@ -122,7 +122,7 @@ msgstr "Сообщения о проблемах на маршруте"
 
 #: outroutemsg.i18n.php:6
 msgid "Settings"
-msgstr "Установки"
+msgstr "Настройки"
 
 #: page.outroutemsg.php:71
 msgid "Standard Routes"
