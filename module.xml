@@ -2,7 +2,7 @@
     <rawname>outroutemsg</rawname>
     <repo>standard</repo>
     <name>Route Congestion Messages</name>
-    <version>16.0.1</version>
+    <version>17.0.1</version>
     <publisher>Sangoma Technologies Corporation</publisher>
     <license>GPLv3+</license>
     <licenselink>https://www.gnu.org/licenses/gpl-3.0.txt</licenselink>
@@ -20,16 +20,16 @@
         </table>
     </database>
     <changelog>
-        *16.0.1* 16.0 release 
+        *17.0.1* 17.0 release 
 	</changelog>
     <depends>
         <module>recordings</module>
-	<module>core ge 15.0.3.25</module>
+		<module>core ge 17.0.1</module>
     </depends>
 	<methods>
 		<get_config pri="580">outroutemsg_get_config</get_config>
 	</methods>
     <supported>
-        <version>16.0</version>
+        <version>17.0</version>
     </supported>
 </module>
