@@ -16,7 +16,7 @@ function outroutemsg_get_config($engine) {
 	switch($engine) {
 		case "asterisk":
 
-			/* here we add sub-outisbusy with the following actions:
+			/* here we add macro-outisbusy with the following actions:
 			 * if ( EMERGENCYROUTE=YES ):
 			 * 	choose Emergency Message over everything else, ANSWER CALL
 			 * if ( INTRACOMPANYROUTE=YES ):
@@ -24,7 +24,7 @@ function outroutemsg_get_config($engine) {
 			 * Use default
 			 */
 
-		$contextname = 'sub-outisbusy';
+		$contextname = 'macro-outisbusy';
 
 		$outroutemsg_ids = outroutemsg_get();
 		$exten = 's';
