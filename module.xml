@@ -2,7 +2,7 @@
     <rawname>outroutemsg</rawname>
     <repo>standard</repo>
     <name>Route Congestion Messages</name>
-    <version>17.0.1</version>
+    <version>18.0.1</version>
     <publisher>Sangoma Technologies Corporation</publisher>
     <more-info>https://sangomakb.atlassian.net/wiki/spaces/PG/pages/26509533/PBX+GUI+-+Route+Congestion+Messages</more-info
     <license>GPLv3+</license>
@@ -21,16 +21,16 @@
         </table>
     </database>
     <changelog>
-        *17.0.1* 17.0 release 
-	</changelog>
+    	*18.0.1* initial release
+    </changelog>
     <depends>
         <module>recordings</module>
-		<module>core ge 17.0.1</module>
+		<module>core ge 18.0.1</module>
     </depends>
 	<methods>
 		<get_config pri="580">outroutemsg_get_config</get_config>
 	</methods>
     <supported>
-        <version>17.0</version>
+        <version>18.0</version>
     </supported>
 </module>
