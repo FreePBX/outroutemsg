@@ -95,6 +95,7 @@ function outroutemsg_get() {
 
 function outroutemsg_recordings_usage($recording_id) {
 	global $active_modules;
+	$usage_arr = [];
 
 	$my_id = sql("SELECT `data` FROM `outroutemsg` WHERE `data` = '$recording_id'","getOne");
 	if (!isset($my_id) || $my_id == '') {

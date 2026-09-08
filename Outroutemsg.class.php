@@ -4,14 +4,22 @@ use BMO;
 use FreePBX_Helpers;
 use PDO;
 class Outroutemsg extends FreePBX_Helpers implements BMO {
+    protected \FreePBX $FreePBX;
+    protected \FreePBX\Database $Database;
+
     const DEFAULT_MSG = -1;
     const CONGESTION_TONE = -2;
+
+    public function __construct($freepbx = null) {
+        parent::__construct($freepbx);
+        $this->Database = $this->FreePBX->Database;
+    }
 
     public function install() {}
     public function uninstall() {}
     public function doConfigPageInit($page) {}
 	public function getActionBar($request) {
-        if($request['display'] === 'outroutemsg'){
+        if(($request['display'] ?? '') === 'outroutemsg'){
             return [
                 'reset' => [
 					'name' => 'reset',
@@ -31,11 +39,11 @@ class Outroutemsg extends FreePBX_Helpers implements BMO {
     public function get(){
         $sql = "SELECT keyword, data FROM outroutemsg";
         $results = $this->Database->query($sql)->fetchAll(PDO::FETCH_KEY_PAIR);
-        $results['default_msg_id']      = isset($results['default_msg_id'])      ? $results['default_msg_id']      : DEFAULT_MSG;
-        $results['intracompany_msg_id'] = isset($results['intracompany_msg_id']) ? $results['intracompany_msg_id'] : DEFAULT_MSG;
-        $results['emergency_msg_id']    = isset($results['emergency_msg_id'])    ? $results['emergency_msg_id']    : DEFAULT_MSG;
-        $results['no_answer_msg_id']    = isset($results['no_answer_msg_id'])    ? $results['no_answer_msg_id']    : DEFAULT_MSG;
-        $results['invalidnmbr_msg_id']  = isset($results['invalidnmbr_msg_id'])  ? $results['invalidnmbr_msg_id']  : DEFAULT_MSG;
+        $results['default_msg_id'] = $results['default_msg_id'] ?? self::DEFAULT_MSG;
+        $results['intracompany_msg_id'] = $results['intracompany_msg_id'] ?? self::DEFAULT_MSG;
+        $results['emergency_msg_id'] = $results['emergency_msg_id'] ?? self::DEFAULT_MSG;
+        $results['no_answer_msg_id'] = $results['no_answer_msg_id'] ?? self::DEFAULT_MSG;
+        $results['invalidnmbr_msg_id'] = $results['invalidnmbr_msg_id'] ?? self::DEFAULT_MSG;
         return $results;
     }
 

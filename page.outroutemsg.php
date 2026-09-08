@@ -1,9 +1,6 @@
 <?php /* $Id: page.outroutemsg.php  $ */
 if (!defined('FREEPBX_IS_AUTH')) { die('No direct script access allowed'); }
 
-define (DEFAULT_MSG, -1);
-define (CONGESTION_TONE, -2);
-
 $dispnum = 'outroutemsg'; //used for switch on config.php
 $tabindex = 0;
 
@@ -13,11 +10,16 @@ $tresults = recordings_list();
 
 // do if we are submitting a form
 if($action){
-	$default_msg_id      = isset($_REQUEST['default_msg_id'])      ? trim($_REQUEST['default_msg_id'])      : DEFAULT_MSG;
-	$intracompany_msg_id = isset($_REQUEST['intracompany_msg_id']) ? trim($_REQUEST['intracompany_msg_id']) : DEFAULT_MSG;
-	$emergency_msg_id    = isset($_REQUEST['emergency_msg_id'])    ? trim($_REQUEST['emergency_msg_id'])    : DEFAULT_MSG;
-	$no_answer_msg_id    = isset($_REQUEST['no_answer_msg_id'])    ? trim($_REQUEST['no_answer_msg_id'])    : DEFAULT_MSG;
-	$invalidnmbr_msg_id  = isset($_REQUEST['invalidnmbr_msg_id'])  ? trim($_REQUEST['invalidnmbr_msg_id'])  : DEFAULT_MSG;
+	$getRequestValue = static function ($key) {
+		return isset($_REQUEST[$key]) && is_scalar($_REQUEST[$key])
+			? trim((string) $_REQUEST[$key])
+			: DEFAULT_MSG;
+	};
+	$default_msg_id = $getRequestValue('default_msg_id');
+	$intracompany_msg_id = $getRequestValue('intracompany_msg_id');
+	$emergency_msg_id = $getRequestValue('emergency_msg_id');
+	$no_answer_msg_id = $getRequestValue('no_answer_msg_id');
+	$invalidnmbr_msg_id = $getRequestValue('invalidnmbr_msg_id');
 
 	if ($action == 'submit') {
 		outroutemsg_add($default_msg_id, $intracompany_msg_id, $emergency_msg_id, $no_answer_msg_id, $invalidnmbr_msg_id);
