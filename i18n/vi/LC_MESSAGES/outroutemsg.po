@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-16 13:22+0000\n"
+"POT-Creation-Date: 2026-10-06 07:19-0400\n"
 "PO-Revision-Date: 2017-07-20 13:29+0200\n"
 "Last-Translator: PETER <ftek@ymail.com>\n"
 "Language-Team: Vietnamese <http://weblate.freepbx.org/projects/freepbx/"
@@ -28,29 +28,29 @@ msgid ""
 "Company Routes"
 msgstr ""
 
-#: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
-#: page.outroutemsg.php:182 page.outroutemsg.php:216
+#: page.outroutemsg.php:80 page.outroutemsg.php:114 page.outroutemsg.php:148
+#: page.outroutemsg.php:184 page.outroutemsg.php:218
 msgid "Congestion Tones"
 msgstr "Âm bận"
 
-#: page.outroutemsg.php:77 page.outroutemsg.php:111 page.outroutemsg.php:145
-#: page.outroutemsg.php:181 page.outroutemsg.php:215
+#: page.outroutemsg.php:79 page.outroutemsg.php:113 page.outroutemsg.php:147
+#: page.outroutemsg.php:183 page.outroutemsg.php:217
 msgid "Default Message"
 msgstr "Mặc định tin nhắn"
 
-#: page.outroutemsg.php:139
+#: page.outroutemsg.php:141
 msgid "Emergency Routes"
 msgstr "Các tuyến khẩn cấp"
 
-#: page.outroutemsg.php:105
+#: page.outroutemsg.php:107
 msgid "Intra-Company Routes"
 msgstr "Các tuyến nội bộ công ty"
 
-#: page.outroutemsg.php:93
+#: page.outroutemsg.php:95
 msgid "Message or tone to be played if no trunks are available."
 msgstr "Tin nhắn hay âm báo sẽ được phát nếu không có trung kế nào khả dụng."
 
-#: page.outroutemsg.php:161
+#: page.outroutemsg.php:163
 msgid ""
 "Message or tone to be played if no trunks are available. Used on all "
 "emergency routes. Consider a message instructing callers to find an "
@@ -62,7 +62,7 @@ msgstr ""
 "tìm kiếm các phương tiện thay thế cho các dịch vụ gọi khẩn cấp chẳng hạn như "
 "điện thoại di động hay tủ hệ thống báo động."
 
-#: page.outroutemsg.php:127
+#: page.outroutemsg.php:129
 msgid ""
 "Message or tone to be played if no trunks are available. Used on routes "
 "marked as intra-company only."
@@ -70,15 +70,15 @@ msgstr ""
 "Tin nhắn hay âm báo sẽ được phát nếu không có trung kế nào khả dụng. Chỉ "
 "được sử dụng trên các tuyến đã được đánh dấu như nội bộ công ty."
 
-#: page.outroutemsg.php:197
+#: page.outroutemsg.php:199
 msgid ""
-"Message or tone to be played if there was no answer. Default message is:<br>"
-"\"The number is not answering.\"<br> Hangupcause is 18 or 19"
+"Message or tone to be played if there was no answer. Default message is:"
+"<br>\"The number is not answering.\"<br> Hangupcause is 18 or 19"
 msgstr ""
-"Tin nhắn hay âm báo sẽ được bật nếu không có trả lời. Mặc định tin nhắn:<br>"
-"\"Số điện thoại đang không trả lời. Hangupcause là 18 hoặc 19"
+"Tin nhắn hay âm báo sẽ được bật nếu không có trả lời. Mặc định tin nhắn:"
+"<br>\"Số điện thoại đang không trả lời. Hangupcause là 18 hoặc 19"
 
-#: page.outroutemsg.php:231
+#: page.outroutemsg.php:233
 msgid ""
 "Message or tone to be played if trunk reports Number or Address Incomplete. "
 "Usually this means that the number you have dialed is to short. Default "
@@ -90,24 +90,24 @@ msgstr ""
 "định tin nhắn là <br> \" Số bạn vừa quay ngoài vùng dịch vụ. Vui lòng kiểm "
 "tra số và thử lại. \"<br>Hangupcase là 28"
 
-#: page.outroutemsg.php:175
+#: page.outroutemsg.php:177
 msgid "No Answer"
 msgstr "Không trả lời"
 
-#: page.outroutemsg.php:53
+#: page.outroutemsg.php:55
 msgid "No Routes Available"
 msgstr "Không có tuyến nào khả dụng"
 
-#: page.outroutemsg.php:209
+#: page.outroutemsg.php:211
 msgid "Number or Address Incomplete"
 msgstr "Số và địa chỉ không đầy đủ"
 
-#: Outroutemsg.class.php:19
+#: Outroutemsg.class.php:27
 msgid "Reset"
 msgstr "Cài đặt lại"
 
-#: functions.inc.php:106 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
-#: page.outroutemsg.php:42
+#: functions.inc.php:107 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
+#: page.outroutemsg.php:44
 msgid "Route Congestion Messages"
 msgstr "Tin nhắn báo tuyến bận"
 
@@ -115,15 +115,15 @@ msgstr "Tin nhắn báo tuyến bận"
 msgid "Settings"
 msgstr "Cài đặt"
 
-#: page.outroutemsg.php:71
+#: page.outroutemsg.php:73
 msgid "Standard Routes"
 msgstr "Các tuyến tiêu chuẩn"
 
-#: Outroutemsg.class.php:24
+#: Outroutemsg.class.php:32
 msgid "Submit"
 msgstr "Gửi đi"
 
-#: page.outroutemsg.php:58
+#: page.outroutemsg.php:60
 msgid "Trunk Failures"
 msgstr "Các sự cố trung kế"
 

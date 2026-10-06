@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: FreePBX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-16 13:22+0000\n"
+"POT-Creation-Date: 2026-10-06 07:19-0400\n"
 "PO-Revision-Date: 2014-02-19 20:56+0200\n"
 "Last-Translator: Chise Mishima <c.mishima@qloog.com>\n"
 "Language-Team: Japanese <http://example.com/projects/freepbx/outroutemsg/ja/"
@@ -56,29 +56,29 @@ msgid ""
 "Company Routes"
 msgstr ""
 
-#: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
-#: page.outroutemsg.php:182 page.outroutemsg.php:216
+#: page.outroutemsg.php:80 page.outroutemsg.php:114 page.outroutemsg.php:148
+#: page.outroutemsg.php:184 page.outroutemsg.php:218
 msgid "Congestion Tones"
 msgstr "輻輳トーン"
 
-#: page.outroutemsg.php:77 page.outroutemsg.php:111 page.outroutemsg.php:145
-#: page.outroutemsg.php:181 page.outroutemsg.php:215
+#: page.outroutemsg.php:79 page.outroutemsg.php:113 page.outroutemsg.php:147
+#: page.outroutemsg.php:183 page.outroutemsg.php:217
 msgid "Default Message"
 msgstr "デフォルトメッセージ"
 
-#: page.outroutemsg.php:139
+#: page.outroutemsg.php:141
 msgid "Emergency Routes"
 msgstr "緊急ルート"
 
-#: page.outroutemsg.php:105
+#: page.outroutemsg.php:107
 msgid "Intra-Company Routes"
 msgstr "社内ルート"
 
-#: page.outroutemsg.php:93
+#: page.outroutemsg.php:95
 msgid "Message or tone to be played if no trunks are available."
 msgstr "利用可能なトランクがない場合に再生されるメッセージ又はトーン。"
 
-#: page.outroutemsg.php:161
+#: page.outroutemsg.php:163
 msgid ""
 "Message or tone to be played if no trunks are available. Used on all "
 "emergency routes. Consider a message instructing callers to find an "
@@ -90,7 +90,7 @@ msgstr ""
 "サービスを呼び出す手段を見つけるように、発信者に対して指示するメッセージを検"
 "討してください。"
 
-#: page.outroutemsg.php:127
+#: page.outroutemsg.php:129
 msgid ""
 "Message or tone to be played if no trunks are available. Used on routes "
 "marked as intra-company only."
@@ -98,16 +98,16 @@ msgstr ""
 "利用可能なトランクがない場合に再生されるメッセージ又はトーン。ルートが、社内"
 "ルートとしてマークされてる時のみ使用。"
 
-#: page.outroutemsg.php:197
+#: page.outroutemsg.php:199
 msgid ""
-"Message or tone to be played if there was no answer. Default message is:<br>"
-"\"The number is not answering.\"<br> Hangupcause is 18 or 19"
+"Message or tone to be played if there was no answer. Default message is:"
+"<br>\"The number is not answering.\"<br> Hangupcause is 18 or 19"
 msgstr ""
 "応答がない場合に再生されるメッセージ 又はトーン。デフォルトのメッセージは："
 "<br>\"The number is not answering.\"<br>ハングアップ理由は 18 又は 19　となり"
 "ます。"
 
-#: page.outroutemsg.php:231
+#: page.outroutemsg.php:233
 msgid ""
 "Message or tone to be played if trunk reports Number or Address Incomplete. "
 "Usually this means that the number you have dialed is to short. Default "
@@ -119,24 +119,24 @@ msgstr ""
 "メッセージ：<br>\"The number you have dialed is not in service. Please check "
 "the number and try again.\"<br>ハングアップ理由は 28　となります。"
 
-#: page.outroutemsg.php:175
+#: page.outroutemsg.php:177
 msgid "No Answer"
 msgstr "応答なし"
 
-#: page.outroutemsg.php:53
+#: page.outroutemsg.php:55
 msgid "No Routes Available"
 msgstr "利用可能なルートがありません"
 
-#: page.outroutemsg.php:209
+#: page.outroutemsg.php:211
 msgid "Number or Address Incomplete"
 msgstr "不完全な番号 又は アドレス"
 
-#: Outroutemsg.class.php:19
+#: Outroutemsg.class.php:27
 msgid "Reset"
 msgstr ""
 
-#: functions.inc.php:106 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
-#: page.outroutemsg.php:42
+#: functions.inc.php:107 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
+#: page.outroutemsg.php:44
 msgid "Route Congestion Messages"
 msgstr "ルートの輻輳メッセージ"
 
@@ -144,15 +144,15 @@ msgstr "ルートの輻輳メッセージ"
 msgid "Settings"
 msgstr "設定"
 
-#: page.outroutemsg.php:71
+#: page.outroutemsg.php:73
 msgid "Standard Routes"
 msgstr "標準ルート"
 
-#: Outroutemsg.class.php:24
+#: Outroutemsg.class.php:32
 msgid "Submit"
 msgstr ""
 
-#: page.outroutemsg.php:58
+#: page.outroutemsg.php:60
 msgid "Trunk Failures"
 msgstr "トランクの障害"
 

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-16 13:22+0000\n"
+"POT-Creation-Date: 2026-10-06 07:19-0400\n"
 "PO-Revision-Date: 2016-03-16 23:44+0200\n"
 "Last-Translator: Media <mousavi.media@gmail.com>\n"
 "Language-Team: Persian <http://weblate.freepbx.org/projects/freepbx/"
@@ -28,29 +28,29 @@ msgid ""
 "Company Routes"
 msgstr ""
 
-#: page.outroutemsg.php:78 page.outroutemsg.php:112 page.outroutemsg.php:146
-#: page.outroutemsg.php:182 page.outroutemsg.php:216
+#: page.outroutemsg.php:80 page.outroutemsg.php:114 page.outroutemsg.php:148
+#: page.outroutemsg.php:184 page.outroutemsg.php:218
 msgid "Congestion Tones"
 msgstr "مجموع تن ها"
 
-#: page.outroutemsg.php:77 page.outroutemsg.php:111 page.outroutemsg.php:145
-#: page.outroutemsg.php:181 page.outroutemsg.php:215
+#: page.outroutemsg.php:79 page.outroutemsg.php:113 page.outroutemsg.php:147
+#: page.outroutemsg.php:183 page.outroutemsg.php:217
 msgid "Default Message"
 msgstr "پیام پیشفرض"
 
-#: page.outroutemsg.php:139
+#: page.outroutemsg.php:141
 msgid "Emergency Routes"
 msgstr "مسیر های اضطراری"
 
-#: page.outroutemsg.php:105
+#: page.outroutemsg.php:107
 msgid "Intra-Company Routes"
 msgstr "مسیر های ورودی شرکت"
 
-#: page.outroutemsg.php:93
+#: page.outroutemsg.php:95
 msgid "Message or tone to be played if no trunks are available."
 msgstr "پیام یا تن اجرا شده در صورت عدم وجود ترانک."
 
-#: page.outroutemsg.php:161
+#: page.outroutemsg.php:163
 msgid ""
 "Message or tone to be played if no trunks are available. Used on all "
 "emergency routes. Consider a message instructing callers to find an "
@@ -58,21 +58,21 @@ msgid ""
 "alarm system panel."
 msgstr "پیامی که در صورت وجود داشتن ترانک پخش میشود."
 
-#: page.outroutemsg.php:127
+#: page.outroutemsg.php:129
 msgid ""
 "Message or tone to be played if no trunks are available. Used on routes "
 "marked as intra-company only."
 msgstr "پیامی که در صورت وجود نداشتن ترانک پخش میشود."
 
-#: page.outroutemsg.php:197
+#: page.outroutemsg.php:199
 msgid ""
-"Message or tone to be played if there was no answer. Default message is:<br>"
-"\"The number is not answering.\"<br> Hangupcause is 18 or 19"
+"Message or tone to be played if there was no answer. Default message is:"
+"<br>\"The number is not answering.\"<br> Hangupcause is 18 or 19"
 msgstr ""
 "پیامی که در صورت پاسخ ندادن پخش میشود.  پیام پیشفرض ：<br>\"داخلی پاسخگو "
 "نیست.\" <br> قطع ۱۸ یا ۱۹"
 
-#: page.outroutemsg.php:231
+#: page.outroutemsg.php:233
 msgid ""
 "Message or tone to be played if trunk reports Number or Address Incomplete. "
 "Usually this means that the number you have dialed is to short. Default "
@@ -83,24 +83,24 @@ msgstr ""
 "message is:<br>\"The number you have dialed is not in service. Please check "
 "the number and try again.\"<br>Hangupcause is 28"
 
-#: page.outroutemsg.php:175
+#: page.outroutemsg.php:177
 msgid "No Answer"
 msgstr "بدون پاسخ"
 
-#: page.outroutemsg.php:53
+#: page.outroutemsg.php:55
 msgid "No Routes Available"
 msgstr "مسیری وجود ندارد"
 
-#: page.outroutemsg.php:209
+#: page.outroutemsg.php:211
 msgid "Number or Address Incomplete"
 msgstr "شماره یا آدرس ناقص"
 
-#: Outroutemsg.class.php:19
+#: Outroutemsg.class.php:27
 msgid "Reset"
 msgstr "بازنشانی"
 
-#: functions.inc.php:106 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
-#: page.outroutemsg.php:42
+#: functions.inc.php:107 outroutemsg.i18n.php:4 outroutemsg.i18n.php:10
+#: page.outroutemsg.php:44
 msgid "Route Congestion Messages"
 msgstr "مجموع پیام های مسیر"
 
@@ -108,15 +108,15 @@ msgstr "مجموع پیام های مسیر"
 msgid "Settings"
 msgstr ""
 
-#: page.outroutemsg.php:71
+#: page.outroutemsg.php:73
 msgid "Standard Routes"
 msgstr "مسیر های استاندارد"
 
-#: Outroutemsg.class.php:24
+#: Outroutemsg.class.php:32
 msgid "Submit"
 msgstr "ارسال"
 
-#: page.outroutemsg.php:58
+#: page.outroutemsg.php:60
 msgid "Trunk Failures"
 msgstr "اشکالات ترانک"
 
